@@ -68,7 +68,7 @@ $ cd ..
 ```
 ### 2) Demultiplex data using the script prepared by Sotirios Vasileiadis which is based on the [Flexbar v3.5 software](https://github.com/seqan/flexbar)
 
-Our script is adapted to our multiplexing system able to fish out sample-specific sequences form both the forward and the reverse reads as shown in the figure below. This approach has been used in several of our previous publications [1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17].
+Our script is adapted to our multiplexing system able to fish out sample-specific sequences form both the forward and the reverse reads as shown in the figure below. This approach has been used in several of our previous publications [[1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17]].
 
 ![figure](sequencing_fig.png)
 **Figure** ***Schematic of the implemented multiplex sequencing approach.***
