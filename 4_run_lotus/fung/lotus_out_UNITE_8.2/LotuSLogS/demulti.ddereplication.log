@@ -1,0 +1,4 @@
+Dereplication log:
+Dereplication:
+Accepted 70,439 unique sequences ( 2 ); average size in this set is 15.0307.
+Uniques with insufficient abundance: 213,714 not passing derep conditions

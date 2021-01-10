@@ -1,0 +1,103 @@
+sdm 1.42 beta
+Input File:  several
+Output File: lotus_tmp/demulti.fna
+Statistics of reads that passed the mid Qual filter
+
+Reads not High Qual: 1,206,723
+Rejected:1,204,109
+Accepted: 2,614 (0 were end-trimmed)
+Bad Reads recovered with dereplication: 0
+Short amplicon mode.
+Looked for switched read pairs (0 detected)
+Min/Avg/Max stats Pair 1
+     - Seq Length : 80/357/489
+     - Quality :   23/28.8/40
+     - Median Seq Length : 0, Quality : 0
+     - Accum. Error 5.46
+Trimmed due to:
+  > 10 avg qual in 100 bp windows :          0
+Rejected due to:
+  < min Seq length (80)  :                 136
+  < avg Quality (18)  :                    0
+  < window (100 nt) avg. Quality (25)  :   0
+  > max Seq length (600)  :                0
+  > (300) homo-nt run  :                   0
+  > (1) amb. Bases  :                      1,398
+Specific sequence searches:
+  -With fwd Primer remaining (<= 2 mismatches) :           0
+  -With rev Primer remaining (<= 2 mismatches) :           0
+  -Barcode unidentified (max 0 errors) :                   0
+
+SampleID	Barcode	Instances
+F001DE1		70
+F002DE2		70
+F003DE3		79
+F004DET1		68
+F005DET2		0
+F006DET3		75
+F007C1		27
+F008C2		29
+F009C3		45
+F010CT1		46
+F011CT2		31
+F012CT3		35
+F013DE4		82
+F014DE5		68
+F015DE6		62
+F016DET4		66
+F017DET5		29
+F018DET6		80
+F019C4		21
+F020C5		45
+F021C6		19
+F022CT4		77
+F023CT5		54
+F024CT6		51
+F025LS1		24
+F026LS4		16
+F027LS5		45
+F028LW1		9
+F029LW2		28
+F030LW3		4
+F031CiS1		23
+F032CiS4		2
+F033CiS5		32
+F034CiW1		34
+F035CiW2		29
+F036CiW3		36
+F037ArS3		29
+F038ArS4		23
+F039ArS5		24
+F040ArW1		23
+F041ArW2		17
+F042ArW3		53
+F043PhS3		25
+F044PhS4		30
+F045PhS5		27
+F046PhW1		19
+F047PhW2		7
+F048PhW3		31
+F049PiS3		26
+F050PiS4		23
+F051PiS5		24
+F052PiW1		31
+F053PiW2		22
+F054PiW3		56
+F055MyS1		20
+F056MyS2		0
+F057MyS3		22
+F058MyW3		34
+F059MyW4		30
+F060MyW5		15
+F061QS2		29
+F062QS3		24
+F063QS4		26
+F064QW1		39
+F065QW2		32
+F066QW4		33
+F067MeS2		31
+F068MeS3		24
+F069MeS5		45
+F070MeW2		51
+F071MeW3		42
+F072MeW5		44

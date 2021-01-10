@@ -1,0 +1,43 @@
+$DCA
+
+Call:
+vegan::decorana(veg = mymicrmathel) 
+
+Detrended correspondence analysis with 26 segments.
+Rescaling of axes with 4 iterations.
+
+                  DCA1   DCA2   DCA3   DCA4
+Eigenvalues     0.3391 0.3047 0.1769 0.2210
+Decorana values 0.4584 0.3146 0.2182 0.1473
+Axis lengths    3.3373 3.2145 2.0957 2.4731
+
+
+$message
+[1] "1st axis length more than 3 SDs... I am using CCA, change myDCAaxiscutoff if otherwise desired"
+
+$`AOV-type-output`
+Permutation test for cca under reduced model
+Permutation: free
+Number of permutations: 999
+
+Model: cca(formula = mymicrmathel ~ season + plant, data = design2)
+         Df ChiSquare      F Pr(>F)    
+Model     8   0.89371 1.4603  0.001 ***
+Residual 39   2.98356                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+$`AOV-type-output-terms`
+Permutation test for cca under reduced model
+Terms added sequentially (first to last)
+Permutation: free
+Number of permutations: 999
+
+Model: cca(formula = mymicrmathel ~ season + plant, data = design2)
+         Df ChiSquare      F Pr(>F)    
+season    1   0.14333 1.8736  0.001 ***
+plant     7   0.75038 1.4012  0.002 ** 
+Residual 39   2.98356                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+

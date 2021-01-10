@@ -1,0 +1,103 @@
+sdm 1.42 beta
+Input File:  several
+Output File: lotus_tmp/demulti.fna
+Statistics of high quality reads
+
+Reads processed: 1,209,337
+Rejected: 4,148
+Accepted: 1,205,189 (0 were end-trimmed)
+Bad Reads recovered with dereplication: 61
+Short amplicon mode.
+Looked for switched read pairs (0 detected)
+Min/Avg/Max stats Pair 1
+     - Seq Length : 90/315/490
+     - Quality :   26/38.1/40
+     - Median Seq Length : 0, Quality : 0
+     - Accum. Error 0.239
+Trimmed due to:
+  > 10 avg qual in 100 bp windows :         0
+Rejected due to:
+  < min Seq length (90)  :                 136
+  < avg Quality (25)  :                    2,730
+  < window (100 nt) avg. Quality (25)  :   2,730
+  > max Seq length (600)  :                0
+  > (300) homo-nt run  :                   0
+  > (0) amb. Bases  :                      1,398
+Specific sequence searches:
+  -With fwd Primer remaining (<= 2 mismatches) :           0
+  -With rev Primer remaining (<= 2 mismatches) :           0
+  -Barcode unidentified (max 0 errors) :                   0
+
+SampleID	Barcode	Instances
+F001DE1		11,248
+F002DE2		12,982
+F003DE3		13,960
+F004DET1		15,031
+F005DET2		64
+F006DET3		17,424
+F007C1		11,861
+F008C2		9,607
+F009C3		10,374
+F010CT1		13,173
+F011CT2		15,976
+F012CT3		12,839
+F013DE4		14,202
+F014DE5		13,527
+F015DE6		12,924
+F016DET4		12,309
+F017DET5		14,260
+F018DET6		12,882
+F019C4		5,283
+F020C5		13,467
+F021C6		9,727
+F022CT4		21,873
+F023CT5		12,680
+F024CT6		12,751
+F025LS1		19,303
+F026LS4		19,540
+F027LS5		41,823
+F028LW1		7,787
+F029LW2		14,786
+F030LW3		4,944
+F031CiS1		22,362
+F032CiS4		1,744
+F033CiS5		17,483
+F034CiW1		15,438
+F035CiW2		18,148
+F036CiW3		18,838
+F037ArS3		21,954
+F038ArS4		18,600
+F039ArS5		19,457
+F040ArW1		26,149
+F041ArW2		17,615
+F042ArW3		42,442
+F043PhS3		19,392
+F044PhS4		20,724
+F045PhS5		21,121
+F046PhW1		18,124
+F047PhW2		9,628
+F048PhW3		31,669
+F049PiS3		21,613
+F050PiS4		13,940
+F051PiS5		22,223
+F052PiW1		19,692
+F053PiW2		20,204
+F054PiW3		16,307
+F055MyS1		17,061
+F056MyS2		4
+F057MyS3		16,529
+F058MyW3		17,757
+F059MyW4		20,391
+F060MyW5		18,763
+F061QS2		19,829
+F062QS3		19,976
+F063QS4		18,939
+F064QW1		18,725
+F065QW2		19,345
+F066QW4		20,385
+F067MeS2		20,169
+F068MeS3		20,091
+F069MeS5		20,001
+F070MeW2		16,047
+F071MeW3		15,108
+F072MeW5		17,877

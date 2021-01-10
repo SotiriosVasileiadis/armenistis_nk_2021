@@ -1,0 +1,112 @@
+=========================================================================
+          
+          LotuS 1.58
+=========================================================================
+COMMAND
+/usr/bin/perl /home/penbio/software/diversity/lotus_pipeline//lotus.pl -i combined_merged -o lotus_out_UNITE_8.2 -m map -p hiSeq -c lOTUs_UNITE_8.2.cfg -s sdm_hiSeq.txt -t lotus_tmp -threads 8 -refDB UNITE -tax_group fungi -amplicon_type ITS -useBestBlastHitOnly 0 -simBasedTaxo 2 -keepUnclassified 1 -LCA_frac 0.3
+
+Using UNITE ITS ref seq database.
+Checking for updates..  
+--------------------------------
+The following updates are available:
+--------------------------------
+12th April 2019	LotuS 1.62.1/sdm 1.50: Updated autoInstall.pl to integrate SLV 138 version. Our tests show that species level is much more often reached with this database in OTU assignments. 
+12th April 2019	LotuS 1.62/sdm 1.50: Compatibility to usearch v11 with all it's glories and fallacies. Also included cross talk algorithm to clean up OTU matrix. 
+27th March 2019	LotuS 1.611/sdm 1.49: Updated error reporting in sdm. 
+19th March 2019	LotuS 1.61/sdm 1.47: Updated default UNITE database (thanks to UNITE team). Integrated PacBio support (option -p PacBio). It is basic, therefore use only with CD-HIT clustering). Further improved sdm, it can now directly output gzipped files. 
+12th June 2018	LotuS 1.60/sdm 1.46: updated to Silva 132, to use you need to reinstall the databases using ./autoinstall.pl (after updating lotus). Further added the option "-TaxOnly", that will only run a taxonomic classification on a fasta file (could be an OTU fasta). Use together with "-i" to set path to fasta. sdm 1.46: Complete rewrite of the read count stats (more precise, the old system sometimes had wrong error reporting). Speed improvements and gzip output file support for sdm. Further, counts of failed reads per sample file support. 
+13th April 2018	LotuS 1.59/sdm 1.41: Added the feature to automatically check ITS OTU's for correct ITS sequences via <a href=http://microbiology.se/software/itsx/>ITSx</a>. You will need to do a full lotus reinstall AFTER you update to 1.59, to install ITSx.
+
+
+Current Lotus version is :1.58
+Latest version is: 1.62.1
+New LotuS updates discovered (10s wait).
+If you want to install updates
+  (1) Press "Ctrl-c"
+  (2) perl autoInstall.pl
+
+To deactivate, open sdm_hiSeq.txt and change "CheckForUpdates" to "0"
+Continuing LotuS run..
+=========================================================================
+          Reading mapping file
+=========================================================================
+Sequence files are indicated in mapping file.
+Running UPARSE de novo sequence clustering..
+Running fast LotuS mode..
+------------ I/O configuration --------------
+Input=   combined_merged
+Output=  lotus_out_UNITE_8.2
+TempDir= lotus_tmp
+------------ Configuration LotuS --------------
+Sequencing platform=hiseq
+AmpliconType=ITS
+OTU id=0.97
+min unique read abundance=2
+UCHIME_REFDB, ABSKEW=/home/penbio/software/diversity/lotus_pipeline//DB//ITS_chimera/uchime_sh_refs_dynamic_original_985_11.03.2015.fasta, 2
+OTU, Chimera prefix=OTU_, CHIMERA_
+Similarity search with Lambda
+ReferenceDatabase=UNITE
+RefDB location=/home/penbio/software/diversity/lotus_pipeline//DB//UNITE/sh_refs_qiime_ver8_99_s_all_04.02.2020.fasta
+TaxonomicGroup=fungi
+--------------------------------------------
+=========================================================================
+          Demultiplexing input files
+           elapsed time: 16 s
+=========================================================================
+
+
+--------- UPARSE clustering ----------- 
+elapsed time: 119 s
+
+
+ =========================================================================
+ UPARSE core routine
+ Cluster at 97%
+=========================================================================
+=========================================================================
+          Searching with mid qual reads..
+=========================================================================
+=========================================================================
+          Extending OTU Seeds
+          elapsed time: 227 s
+=========================================================================
+=========================================================================
+          Removed 968 chimeric
+          and 0 phiX contaminant
+          OTUs (122337 read counts) from abundance matrix, 
+          4612 OTUs remaining.
+=========================================================================
+=========================================================================
+          Assigning taxonomy against reference using LAMBDA
+          elapsed time: 355 s
+=========================================================================
+=========================================================================
+          Calculating Taxonomic Abundance Tables from UNITE assignments
+          elapsed time: 583 s
+=========================================================================
+Calculating higher abundance levels
+Total reads in matrix: 1101307
+TaxLvl	%AssignedReads	%AssignedTax
+Phylum	99.876147159693	89.6551724137931
+Class	98.0869094630289	82.4324324324324
+Order	94.7416115579035	79.7169811320755
+Family	90.498834566565	80.4772234273319
+Genus	87.9887261226888	80.9523809523809
+Species	80.9058691173306	71.6862745098039
+
+=========================================================================
+          biom file created: lotus_out_UNITE_8.2/OTU.biom
+=========================================================================
+=========================================================================
+          Building tree and aligning OTUs
+          elapsed time: 585 s
+=========================================================================
+Building tree..
+Delete temp dir lotus_tmp
+=========================================================================
+          Finished after 1005 s 
+          Output files are in 
+          lotus_out_UNITE_8.2
+          The files in LotuSLogS/ have statistics about this run
+          See LotuSLogS/citations.txt for programs used in this run
+=========================================================================

@@ -1,0 +1,79 @@
+sdm 1.42 beta
+Input File:  several
+Output File: lotus_tmp/demulti.fna
+Statistics of high quality reads
+
+Reads processed: 2,059,739
+Rejected: 6,632
+Accepted: 2,053,107 (0 were end-trimmed)
+Bad Reads recovered with dereplication: 4
+Short amplicon mode.
+Looked for switched read pairs (0 detected)
+Min/Avg/Max stats Pair 1
+     - Seq Length : 90/293/490
+     - Quality :   26/38/40
+     - Median Seq Length : 0, Quality : 0
+     - Accum. Error 0.245
+Trimmed due to:
+  > 10 avg qual in 100 bp windows :         0
+Rejected due to:
+  < min Seq length (90)  :                 1,300
+  < avg Quality (25)  :                    1,810
+  < window (100 nt) avg. Quality (25)  :   1,809
+  > max Seq length (600)  :                0
+  > (300) homo-nt run  :                   0
+  > (0) amb. Bases  :                      2,032
+Specific sequence searches:
+  -With fwd Primer remaining (<= 2 mismatches) :           0
+  -With rev Primer remaining (<= 2 mismatches) :           0
+  -Barcode unidentified (max 0 errors) :                   0
+
+SampleID	Barcode	Instances
+B001LS1		31,840
+B002LS4		31,809
+B003LS5		40,749
+B004LW1		34,649
+B005LW2		27,489
+B006LW3		30,162
+B007CiS1		36,844
+B008CiS4		50,733
+B009CiS5		41,129
+B010CiW1		33,698
+B011CiW2		32,468
+B012CiW3		42,764
+B013ArS3		44,513
+B014ArS4		51,988
+B015ArS5		41,247
+B016ArW1		37,328
+B017ArW2		29,785
+B018ArW3		48,103
+B019PhS3		46,834
+B020PhS4		38,839
+B021PhS5		48,308
+B022PhW1		48,021
+B023PhW2		25,167
+B024PhW3		145,385
+B025PiS3		41,272
+B026PiS4		45,804
+B027PiS5		54,934
+B028PiW1		23,169
+B029PiW2		50,410
+B030PiW3		29,132
+B031MyS1		45,914
+B032MyS2		42,519
+B033MyS3		61,759
+B034MyW3		46,956
+B035MyW4		11,307
+B036MyW5		47,672
+B037QS2		45,514
+B038QS3		30,066
+B039QS4		12,816
+B040QW1		59,151
+B041QW2		24,918
+B042QW4		50,514
+B043MeS2		50,819
+B044MeS3		45,900
+B045MeS5		34,470
+B046MeW2		41,170
+B047MeW3		40,445
+B048MeW5		52,637

@@ -1,0 +1,92 @@
+=========================================================================
+          
+          LotuS 1.58
+=========================================================================
+COMMAND
+/usr/bin/perl /home/penbio/software/diversity/lotus_pipeline//lotus.pl -i combined_merged -o lotus_out -m map -p hiSeq -c lOTUs.cfg -s sdm_hiSeq.txt -t lotus_tmp -threads 8 -refDB SLV -tax_group bacteria -amplicon_type SSU -useBestBlastHitOnly 0 -simBasedTaxo 2 -keepUnclassified 1 -LCA_frac 0.3
+
+Using Silva SSU ref seq database.
+Checking for updates..  Your LotuS version is up-to-date!
+=========================================================================
+          Reading mapping file
+=========================================================================
+Sequence files are indicated in mapping file.
+Running UPARSE de novo sequence clustering..
+Running fast LotuS mode..
+------------ I/O configuration --------------
+Input=   combined_merged
+Output=  lotus_out
+TempDir= lotus_tmp
+------------ Configuration LotuS --------------
+Sequencing platform=hiseq
+AmpliconType=SSU
+OTU id=0.97
+min unique read abundance=2
+UCHIME_REFDB, ABSKEW=/home/penbio/software/diversity/lotus_pipeline//DB//rdp_gold.fa, 2
+OTU, Chimera prefix=OTU_, CHIMERA_
+Similarity search with Lambda
+ReferenceDatabase=SILVA
+RefDB location=/home/penbio/software/diversity/lotus_pipeline//DB//SLV_128_SSU.fasta
+TaxonomicGroup=bacteria
+--------------------------------------------
+=========================================================================
+          Demultiplexing input files
+           elapsed time: 1 s
+=========================================================================
+
+
+--------- UPARSE clustering ----------- 
+elapsed time: 360 s
+
+
+ =========================================================================
+ UPARSE core routine
+ Cluster at 97%
+=========================================================================
+=========================================================================
+          Searching with mid qual reads..
+=========================================================================
+=========================================================================
+          Extending OTU Seeds
+          elapsed time: 492 s
+=========================================================================
+=========================================================================
+          Removed 915 chimeric
+          and 0 phiX contaminant
+          OTUs (116106 read counts) from abundance matrix, 
+          4841 OTUs remaining.
+=========================================================================
+=========================================================================
+          Assigning taxonomy against reference using LAMBDA
+          elapsed time: 534 s
+=========================================================================
+=========================================================================
+          Calculating Taxonomic Abundance Tables from SILVA assignments
+          elapsed time: 1947 s
+=========================================================================
+Calculating higher abundance levels
+Total reads in matrix: 1779205
+TaxLvl	%AssignedReads	%AssignedTax
+Phylum	98.3748921568903	94
+Class	91.0172239848696	76
+Order	77.4529635427059	63.1944444444444
+Family	63.7409404762239	56.0253699788584
+Genus	40.7162749655043	63.9913232104121
+Species	15.5945492509295	48.2412060301507
+
+=========================================================================
+          biom file created: lotus_out/OTU.biom
+=========================================================================
+=========================================================================
+          Building tree and aligning OTUs
+          elapsed time: 1948 s
+=========================================================================
+Building tree..
+Delete temp dir lotus_tmp
+=========================================================================
+          Finished after 2420 s 
+          Output files are in 
+          lotus_out
+          The files in LotuSLogS/ have statistics about this run
+          See LotuSLogS/citations.txt for programs used in this run
+=========================================================================

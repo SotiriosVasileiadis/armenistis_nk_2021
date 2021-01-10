@@ -1,0 +1,15 @@
+usearch v10.0.240_i86linux32, 4.0Gb RAM (65.9Gb total), 8 cores
+/usr/local/bin/usearch -usearch_local lotus_tmp/otu_seeds.fna -db /home/penbio/software/diversity/lotus_pipeline//DB//phiX.fasta -uc lotus_tmp/otu_seeds.fna.cont_hit.uc -query_cov .8 -log lotus_out_UNITE_8.2/LotuSLogS//PhiX_contami_align.log -id .95 -threads 8 -strand both 
+Started Thu May 28 16:06:13 2020
+00:00 40Mb    100.0% Reading /home/penbio/software/diversity/lotus_pipeline//DB//phiX.fasta
+00:00 6.4Mb   100.0% Masking (fastnucleo)
+00:00 7.4Mb   100.0% Word stats
+00:00 7.4Mb   100.0% Alloc rows
+00:00 7.4Mb   100.0% Build index
+Db load time 0 secs (0s)
+Search time 1 secs (1.00s)
+233920 mallocs, 233264 frees
+
+Finished Thu May 28 16:06:14 2020
+Elapsed time 00:01
+Max memory 132Mb

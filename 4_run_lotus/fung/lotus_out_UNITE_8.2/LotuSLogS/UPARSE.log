@@ -1,0 +1,8 @@
+usearch v10.0.240_i86linux32, 4.0Gb RAM (65.9Gb total), 8 cores
+/usr/local/bin/usearch -cluster_otus lotus_tmp/derep.fas -otus lotus_tmp/tmp_otu.fa -log lotus_out_UNITE_8.2/LotuSLogS//UPARSE.log -uparseout lotus_tmp/finalOTU.uc 
+Started Thu May 28 16:04:21 2020
+1119695 mallocs, 1041520 frees
+
+Finished Thu May 28 16:05:57 2020
+Elapsed time 01:36
+Max memory 68Mb

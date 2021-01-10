@@ -1,0 +1,17 @@
+usearch v10.0.240_i86linux32, 4.0Gb RAM (65.9Gb total), 8 cores
+/usr/local/bin/usearch -uchime2_ref lotus_tmp/otu_seeds.fna -db /home/penbio/software/diversity/lotus_pipeline//DB//rdp_gold.fa -mode balanced -strand plus -chimeras lotus_out/ExtraFiles//chimeras_ref.fa -notmatched lotus_out/otus.fa -threads 8 -log lotus_out/LotuSLogS//uchime_refdb.log 
+Started Fri Feb 16 15:39:47 2018
+00:00 42Mb    100.0% Reading lotus_tmp/otu_seeds.fna
+00:00 75Mb    100.0% Reading /home/penbio/software/diversity/lotus_pipeline//DB//rdp_gold.fa
+00:00 42Mb    100.0% Converting to upper case
+00:01 42Mb    100.0% Word stats
+00:01 42Mb    100.0% Alloc rows
+00:03 156Mb   100.0% Build index
+00:33 292Mb   100.0% Chimeras 915/5756 (15.9%), in db 0 (0.0%), not matched 4841 (84.1%)
+63622 mallocs, 958 frees
+
+WARNING: Input has lower-case masked sequences
+
+Finished Fri Feb 16 15:40:20 2018
+Elapsed time 00:33
+Max memory 292Mb

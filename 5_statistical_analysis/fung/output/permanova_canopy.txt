@@ -1,0 +1,12 @@
+Permutation test for adonis under reduced model
+Terms added sequentially (first to last)
+Permutation: free
+Number of permutations: 999
+
+adonis2(formula = mycanmattr ~ type_canopy, data = design2, permutations = 999, method = "bray")
+            Df SumOfSqs      R2      F Pr(>F)    
+type_canopy  1   1.0389 0.08577 4.2217  0.001 ***
+Residual    45  11.0737 0.91423                  
+Total       46  12.1126 1.00000                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

@@ -1,0 +1,1255 @@
+$`Shannon Shapiro`
+
+	Shapiro-Wilk normality test
+
+data:  my_setup[, myalphaindex]
+W = 0.95089, p-value = 0.04692
+
+
+$`Shannon Levene`
+Levene's Test for Homogeneity of Variance (center = median)
+      Df F value Pr(>F)
+group 15  0.4805 0.9329
+      31               
+
+$`Shannon ANOVA`
+$statistics
+    MSerror Df     Mean       CV
+  0.2260971 31 3.411408 13.93843
+
+$parameters
+   test     name.t ntr StudentizedRange alpha
+  Tukey planttreat  16         5.257189  0.05
+
+$means
+                       Shannon       std r      Min      Max      Q25      Q50      Q75
+A._unedo_Summer       2.731759 0.2959307 3 2.391806 2.931723 2.631776 2.871747 2.901735
+A._unedo_Winter       4.270550 0.2610181 3 4.065722 4.564444 4.123603 4.181484 4.372964
+C._incanus_Summer     2.802528 0.3134109 3 2.538671 3.148959 2.629313 2.719956 2.934457
+C._incanus_Winter     3.916133 0.2677653 3 3.618298 4.136946 3.805727 3.993156 4.065051
+L._stoechas_Summer    1.894375 0.5048620 3 1.363306 2.368140 1.657492 1.951678 2.159909
+L._stoechas_Winter    3.965260 0.3337010 3 3.579948 4.160642 3.867569 4.155190 4.157916
+M._communis_Summer    1.925454 0.6263427 2 1.482563 2.368345 1.704008 1.925454 2.146900
+M._communis_Winter    4.731717 0.2577406 3 4.518448 5.018122 4.588514 4.658580 4.838351
+M._officinalis_Summer 2.276081 0.2266926 3 2.014915 2.421950 2.203147 2.391379 2.406665
+M._officinalis_Winter 4.730479 0.5835390 3 4.262804 5.384409 4.403514 4.544224 4.964316
+P._latifolia_Summer   2.655021 0.1219732 3 2.537077 2.780659 2.592202 2.647328 2.713993
+P._latifolia_Winter   4.099725 0.4560545 3 3.641353 4.553426 3.872874 4.104395 4.328911
+P._lentiscus_Summer   2.792837 0.6690516 3 2.023501 3.238504 2.570004 3.116508 3.177506
+P._lentiscus_Winter   4.094951 1.0835558 3 2.849161 4.818333 3.733260 4.617360 4.717847
+Q._coccifera_Summer   2.223961 0.5195757 3 1.696136 2.734875 1.968504 2.240872 2.487873
+Q._coccifera_Winter   4.976375 0.2087986 3 4.836137 5.216337 4.856393 4.876649 5.046493
+
+$comparison
+NULL
+
+$groups
+                       Shannon groups
+Q._coccifera_Winter   4.976375      a
+M._communis_Winter    4.731717      a
+M._officinalis_Winter 4.730479      a
+A._unedo_Winter       4.270550      a
+P._latifolia_Winter   4.099725     ab
+P._lentiscus_Winter   4.094951    abc
+L._stoechas_Winter    3.965260    abc
+C._incanus_Winter     3.916133    abc
+C._incanus_Summer     2.802528    bcd
+P._lentiscus_Summer   2.792837    bcd
+A._unedo_Summer       2.731759    bcd
+P._latifolia_Summer   2.655021     cd
+M._officinalis_Summer 2.276081      d
+Q._coccifera_Summer   2.223961      d
+M._communis_Summer    1.925454      d
+L._stoechas_Summer    1.894375      d
+
+attr(,"class")
+[1] "group"
+
+$`Shannon Kruskal`
+$statistics
+     Chisq      p.chisq
+  40.09663 0.0004385118
+
+$parameters
+            test p.ajusted              name.t ntr alpha
+  Kruskal-Wallis       fdr my_setup$planttreat  16  0.05
+
+$means
+                      my_setup...myalphaindex.      rank       std r      Min      Max      Q25
+A._unedo_Summer                       2.731759 17.333333 0.2959307 3 2.391806 2.931723 2.631776
+A._unedo_Winter                       4.270550 34.000000 0.2610181 3 4.065722 4.564444 4.123603
+C._incanus_Summer                     2.802528 17.666667 0.3134109 3 2.538671 3.148959 2.629313
+C._incanus_Winter                     3.916133 28.333333 0.2677653 3 3.618298 4.136946 3.805727
+L._stoechas_Summer                    1.894375  4.333333 0.5048620 3 1.363306 2.368140 1.657492
+L._stoechas_Winter                    3.965260 30.000000 0.3337010 3 3.579948 4.160642 3.867569
+M._communis_Summer                    1.925454  5.500000 0.6263427 2 1.482563 2.368345 1.704008
+M._communis_Winter                    4.731717 40.666667 0.2577406 3 4.518448 5.018122 4.588514
+M._officinalis_Summer                 2.276081  9.000000 0.2266926 3 2.014915 2.421950 2.203147
+M._officinalis_Winter                 4.730479 39.666667 0.5835390 3 4.262804 5.384409 4.403514
+P._latifolia_Summer                   2.655021 15.333333 0.1219732 3 2.537077 2.780659 2.592202
+P._latifolia_Winter                   4.099725 31.666667 0.4560545 3 3.641353 4.553426 3.872874
+P._lentiscus_Summer                   2.792837 17.333333 0.6690516 3 2.023501 3.238504 2.570004
+P._lentiscus_Winter                   4.094951 33.666667 1.0835558 3 2.849161 4.818333 3.733260
+Q._coccifera_Summer                   2.223961  9.000000 0.5195757 3 1.696136 2.734875 1.968504
+Q._coccifera_Winter                   4.976375 44.333333 0.2087986 3 4.836137 5.216337 4.856393
+                           Q50      Q75
+A._unedo_Summer       2.871747 2.901735
+A._unedo_Winter       4.181484 4.372964
+C._incanus_Summer     2.719956 2.934457
+C._incanus_Winter     3.993156 4.065051
+L._stoechas_Summer    1.951678 2.159909
+L._stoechas_Winter    4.155190 4.157916
+M._communis_Summer    1.925454 2.146900
+M._communis_Winter    4.658580 4.838351
+M._officinalis_Summer 2.391379 2.406665
+M._officinalis_Winter 4.544224 4.964316
+P._latifolia_Summer   2.647328 2.713993
+P._latifolia_Winter   4.104395 4.328911
+P._lentiscus_Summer   3.116508 3.177506
+P._lentiscus_Winter   4.617360 4.717847
+Q._coccifera_Summer   2.240872 2.487873
+Q._coccifera_Winter   4.876649 5.046493
+
+$comparison
+NULL
+
+$groups
+                      my_setup[, myalphaindex] groups
+Q._coccifera_Winter                  44.333333      a
+M._communis_Winter                   40.666667     ab
+M._officinalis_Winter                39.666667     ab
+A._unedo_Winter                      34.000000    abc
+P._lentiscus_Winter                  33.666667    abc
+P._latifolia_Winter                  31.666667     bc
+L._stoechas_Winter                   30.000000     bc
+C._incanus_Winter                    28.333333     cd
+C._incanus_Summer                    17.666667     de
+A._unedo_Summer                      17.333333     de
+P._lentiscus_Summer                  17.333333     de
+P._latifolia_Summer                  15.333333     ef
+M._officinalis_Summer                 9.000000     ef
+Q._coccifera_Summer                   9.000000     ef
+M._communis_Summer                    5.500000     ef
+L._stoechas_Summer                    4.333333      f
+
+attr(,"class")
+[1] "group"
+
+$`Shannon Student's t tests`
+$`Shannon Student's t tests`$`t.test A._unedo`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -6.7544, df = 3.9386, p-value = 0.002648
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -2.1752300 -0.9023535
+sample estimates:
+mean of x mean of y 
+ 2.731759  4.270550 
+
+
+$`Shannon Student's t tests`$`t.test C._incanus`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -4.6791, df = 3.9048, p-value = 0.01002
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -1.7807846 -0.4464249
+sample estimates:
+mean of x mean of y 
+ 2.802528  3.916133 
+
+
+$`Shannon Student's t tests`$`t.test L._stoechas`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -5.927, df = 3.4675, p-value = 0.006301
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -3.102658 -1.039114
+sample estimates:
+mean of x mean of y 
+ 1.894375  3.965260 
+
+
+$`Shannon Student's t tests`$`t.test M._communis`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -6.0063, df = 1.2307, p-value = 0.07347
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -6.663460  1.050935
+sample estimates:
+mean of x mean of y 
+ 1.925454  4.731717 
+
+
+$`Shannon Student's t tests`$`t.test M._officinalis`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -6.7907, df = 2.5902, p-value = 0.01025
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -3.714770 -1.194025
+sample estimates:
+mean of x mean of y 
+ 2.276081  4.730479 
+
+
+$`Shannon Student's t tests`$`t.test P._latifolia`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -5.3005, df = 2.2847, p-value = 0.02521
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -2.4879503 -0.4014571
+sample estimates:
+mean of x mean of y 
+ 2.655021  4.099725 
+
+
+$`Shannon Student's t tests`$`t.test P._lentiscus`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -1.771, df = 3.3315, p-value = 0.1655
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -3.5156174  0.9113896
+sample estimates:
+mean of x mean of y 
+ 2.792837  4.094951 
+
+
+$`Shannon Student's t tests`$`t.test Q._coccifera`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -8.5137, df = 2.6296, p-value = 0.005519
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -3.868339 -1.636489
+sample estimates:
+mean of x mean of y 
+ 2.223961  4.976375 
+
+
+
+$`Simpson Shapiro`
+
+	Shapiro-Wilk normality test
+
+data:  my_setup[, myalphaindex]
+W = 0.88451, p-value = 0.0002392
+
+
+$`Simpson Levene`
+Levene's Test for Homogeneity of Variance (center = median)
+      Df F value Pr(>F)
+group 15  0.8376 0.6322
+      31               
+
+$`Simpson ANOVA`
+$statistics
+     MSerror Df      Mean       CV
+  0.00243511 31 0.8588384 5.745765
+
+$parameters
+   test     name.t ntr StudentizedRange alpha
+  Tukey planttreat  16         5.257189  0.05
+
+$means
+                        Simpson         std r       Min       Max       Q25       Q50       Q75
+A._unedo_Summer       0.7916027 0.045864201 3 0.7389504 0.8228609 0.7759736 0.8129968 0.8179289
+A._unedo_Winter       0.9678078 0.007571733 3 0.9613040 0.9761200 0.9636517 0.9659994 0.9710597
+C._incanus_Summer     0.8347065 0.049569507 3 0.7814819 0.8795531 0.8122832 0.8430845 0.8613188
+C._incanus_Winter     0.9382081 0.009807350 3 0.9269926 0.9451734 0.9347254 0.9424583 0.9438159
+L._stoechas_Summer    0.6895525 0.077530752 3 0.6017107 0.7484359 0.6601107 0.7185108 0.7334734
+L._stoechas_Winter    0.9534881 0.010762360 3 0.9417236 0.9628382 0.9488130 0.9559024 0.9593703
+M._communis_Summer    0.6848932 0.095546736 2 0.6173314 0.7524549 0.6511123 0.6848932 0.7186740
+M._communis_Winter    0.9735649 0.003191845 3 0.9705591 0.9769149 0.9718899 0.9732206 0.9750678
+M._officinalis_Summer 0.7241768 0.028549590 3 0.6917807 0.7456614 0.7134345 0.7350883 0.7403749
+M._officinalis_Winter 0.9700925 0.018742016 3 0.9535313 0.9904378 0.9599199 0.9663085 0.9783732
+P._latifolia_Summer   0.7890832 0.029500246 3 0.7648900 0.8219471 0.7726512 0.7804124 0.8011798
+P._latifolia_Winter   0.9514287 0.027214445 3 0.9321609 0.9825612 0.9358625 0.9395640 0.9610626
+P._lentiscus_Summer   0.7936669 0.086666003 3 0.6937744 0.8488203 0.7660902 0.8384060 0.8436132
+P._lentiscus_Winter   0.9255230 0.084943935 3 0.8275818 0.9790886 0.8987402 0.9698985 0.9744936
+Q._coccifera_Summer   0.7103252 0.069356570 3 0.6390713 0.7776144 0.6766807 0.7142900 0.7459522
+Q._coccifera_Winter   0.9853134 0.003791253 3 0.9816183 0.9891940 0.9833731 0.9851279 0.9871609
+
+$comparison
+NULL
+
+$groups
+                        Simpson groups
+Q._coccifera_Winter   0.9853134      a
+M._communis_Winter    0.9735649     ab
+M._officinalis_Winter 0.9700925     ab
+A._unedo_Winter       0.9678078     ab
+L._stoechas_Winter    0.9534881     ab
+P._latifolia_Winter   0.9514287     ab
+C._incanus_Winter     0.9382081    abc
+P._lentiscus_Winter   0.9255230    abc
+C._incanus_Summer     0.8347065    bcd
+P._lentiscus_Summer   0.7936669     cd
+A._unedo_Summer       0.7916027     cd
+P._latifolia_Summer   0.7890832     cd
+M._officinalis_Summer 0.7241768      d
+Q._coccifera_Summer   0.7103252      d
+L._stoechas_Summer    0.6895525      d
+M._communis_Summer    0.6848932      d
+
+attr(,"class")
+[1] "group"
+
+$`Simpson Kruskal`
+$statistics
+     Chisq      p.chisq
+  39.85816 0.0004764007
+
+$parameters
+            test p.ajusted              name.t ntr alpha
+  Kruskal-Wallis       fdr my_setup$planttreat  16  0.05
+
+$means
+                      my_setup...myalphaindex.      rank         std r       Min       Max
+A._unedo_Summer                      0.7916027 15.000000 0.045864201 3 0.7389504 0.8228609
+A._unedo_Winter                      0.9678078 36.000000 0.007571733 3 0.9613040 0.9761200
+C._incanus_Summer                    0.8347065 20.666667 0.049569507 3 0.7814819 0.8795531
+C._incanus_Winter                    0.9382081 28.000000 0.009807350 3 0.9269926 0.9451734
+L._stoechas_Summer                   0.6895525  6.333333 0.077530752 3 0.6017107 0.7484359
+L._stoechas_Winter                   0.9534881 31.333333 0.010762360 3 0.9417236 0.9628382
+M._communis_Summer                   0.6848932  7.000000 0.095546736 2 0.6173314 0.7524549
+M._communis_Winter                   0.9735649 39.333333 0.003191845 3 0.9705591 0.9769149
+M._officinalis_Summer                0.7241768  7.333333 0.028549590 3 0.6917807 0.7456614
+M._officinalis_Winter                0.9700925 38.000000 0.018742016 3 0.9535313 0.9904378
+P._latifolia_Summer                  0.7890832 15.333333 0.029500246 3 0.7648900 0.8219471
+P._latifolia_Winter                  0.9514287 32.333333 0.027214445 3 0.9321609 0.9825612
+P._lentiscus_Summer                  0.7936669 16.333333 0.086666003 3 0.6937744 0.8488203
+P._lentiscus_Winter                  0.9255230 33.000000 0.084943935 3 0.8275818 0.9790886
+Q._coccifera_Summer                  0.7103252  7.666667 0.069356570 3 0.6390713 0.7776144
+Q._coccifera_Winter                  0.9853134 44.666667 0.003791253 3 0.9816183 0.9891940
+                            Q25       Q50       Q75
+A._unedo_Summer       0.7759736 0.8129968 0.8179289
+A._unedo_Winter       0.9636517 0.9659994 0.9710597
+C._incanus_Summer     0.8122832 0.8430845 0.8613188
+C._incanus_Winter     0.9347254 0.9424583 0.9438159
+L._stoechas_Summer    0.6601107 0.7185108 0.7334734
+L._stoechas_Winter    0.9488130 0.9559024 0.9593703
+M._communis_Summer    0.6511123 0.6848932 0.7186740
+M._communis_Winter    0.9718899 0.9732206 0.9750678
+M._officinalis_Summer 0.7134345 0.7350883 0.7403749
+M._officinalis_Winter 0.9599199 0.9663085 0.9783732
+P._latifolia_Summer   0.7726512 0.7804124 0.8011798
+P._latifolia_Winter   0.9358625 0.9395640 0.9610626
+P._lentiscus_Summer   0.7660902 0.8384060 0.8436132
+P._lentiscus_Winter   0.8987402 0.9698985 0.9744936
+Q._coccifera_Summer   0.6766807 0.7142900 0.7459522
+Q._coccifera_Winter   0.9833731 0.9851279 0.9871609
+
+$comparison
+NULL
+
+$groups
+                      my_setup[, myalphaindex] groups
+Q._coccifera_Winter                  44.666667      a
+M._communis_Winter                   39.333333     ab
+M._officinalis_Winter                38.000000     ab
+A._unedo_Winter                      36.000000     ab
+P._lentiscus_Winter                  33.000000      b
+P._latifolia_Winter                  32.333333      b
+L._stoechas_Winter                   31.333333     bc
+C._incanus_Winter                    28.000000     bc
+C._incanus_Summer                    20.666667     cd
+P._lentiscus_Summer                  16.333333     de
+P._latifolia_Summer                  15.333333     de
+A._unedo_Summer                      15.000000     de
+Q._coccifera_Summer                   7.666667      e
+M._officinalis_Summer                 7.333333      e
+M._communis_Summer                    7.000000      e
+L._stoechas_Summer                    6.333333      e
+
+attr(,"class")
+[1] "group"
+
+$`Simpson Student's t tests`
+$`Simpson Student's t tests`$`t.test A._unedo`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -22.737, df = 2.1234, p-value = 0.001425
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -4.101953 -2.855942
+sample estimates:
+mean of x mean of y 
+0.7916027 4.2705504 
+
+
+$`Simpson Student's t tests`$`t.test C._incanus`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -19.599, df = 2.1369, p-value = 0.001891
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -3.718010 -2.444844
+sample estimates:
+mean of x mean of y 
+0.8347065 3.9161332 
+
+
+$`Simpson Student's t tests`$`t.test L._stoechas`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -16.561, df = 2.2153, p-value = 0.002294
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -4.052201 -2.499215
+sample estimates:
+mean of x mean of y 
+0.6895525 3.9652603 
+
+
+$`Simpson Student's t tests`$`t.test M._communis`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -24.762, df = 2.6816, p-value = 0.000304
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -4.603654 -3.489992
+sample estimates:
+mean of x mean of y 
+0.6848932 4.7317166 
+
+
+$`Simpson Student's t tests`$`t.test M._officinalis`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -11.877, df = 2.0096, p-value = 0.006892
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -5.451021 -2.561583
+sample estimates:
+mean of x mean of y 
+0.7241768 4.7304787 
+
+
+$`Simpson Student's t tests`$`t.test P._latifolia`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -12.547, df = 2.0167, p-value = 0.006097
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -4.436931 -2.184353
+sample estimates:
+mean of x mean of y 
+0.7890832 4.0997250 
+
+
+$`Simpson Student's t tests`$`t.test P._lentiscus`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -5.2603, df = 2.0256, p-value = 0.03337
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -5.9691557 -0.6334131
+sample estimates:
+mean of x mean of y 
+0.7936669 4.0949513 
+
+
+$`Simpson Student's t tests`$`t.test Q._coccifera`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -33.584, df = 2.436, p-value = 0.0002615
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -4.728770 -3.803329
+sample estimates:
+mean of x mean of y 
+0.7103252 4.9763746 
+
+
+
+$`Fishers_a Shapiro`
+
+	Shapiro-Wilk normality test
+
+data:  my_setup[, myalphaindex]
+W = 0.96849, p-value = 0.2318
+
+
+$`Fishers_a Levene`
+Levene's Test for Homogeneity of Variance (center = median)
+      Df F value Pr(>F)
+group 15  0.3976 0.9692
+      31               
+
+$`Fishers_a ANOVA`
+$statistics
+   MSerror Df     Mean       CV
+  666.0316 31 64.37671 40.08839
+
+$parameters
+   test     name.t ntr StudentizedRange alpha
+  Tukey planttreat  16         5.257189  0.05
+
+$means
+                      Fishers_a      std r      Min       Max      Q25       Q50       Q75
+A._unedo_Summer        67.75812 13.62338 3 53.08685  80.00922 61.63257  70.17829  75.09376
+A._unedo_Winter        65.58807 29.80670 3 31.25306  84.82191 55.97115  80.68924  82.75558
+C._incanus_Summer      42.97321 13.54498 3 28.96074  55.99647 36.46158  43.96241  49.97944
+C._incanus_Winter      73.12230 19.32928 3 52.86154  91.36115 64.00287  75.14421  83.25268
+L._stoechas_Summer     28.47681 14.28477 3 20.01704  44.96960 20.23042  20.44379  32.70669
+L._stoechas_Winter     33.05557 20.82589 3 12.40955  54.05679 22.55496  32.70038  43.37858
+M._communis_Summer     35.51668 32.90838 2 12.24694  58.78642 23.88181  35.51668  47.15155
+M._communis_Winter     96.86603 34.52273 3 66.81205 134.57313 78.01248  89.21291 111.89302
+M._officinalis_Summer  67.05326 19.58944 3 46.16083  85.00787 58.07596  69.99109  77.49948
+M._officinalis_Winter  82.09564 42.62766 3 46.17666 129.20111 58.54291  70.90916 100.05513
+P._latifolia_Summer    58.38438  6.58533 3 52.63669  65.56979 54.79168  56.94667  61.25823
+P._latifolia_Winter    49.01297 35.09579 3 18.96825  87.58742 29.72574  40.48323  64.03532
+P._lentiscus_Summer    71.27857 23.34602 3 46.47207  92.82046 60.50763  74.54319  83.68182
+P._lentiscus_Winter    99.96196 25.41485 3 71.38546 120.03401 89.92593 108.46641 114.25021
+Q._coccifera_Summer    49.22857 21.38678 3 29.46613  71.93472 37.87550  46.28486  59.10979
+Q._coccifera_Winter   100.03521 34.59775 3 61.15695 127.43452 86.33556 111.51417 119.47435
+
+$comparison
+NULL
+
+$groups
+                      Fishers_a groups
+Q._coccifera_Winter   100.03521      a
+P._lentiscus_Winter    99.96196      a
+M._communis_Winter     96.86603      a
+M._officinalis_Winter  82.09564      a
+C._incanus_Winter      73.12230      a
+P._lentiscus_Summer    71.27857      a
+A._unedo_Summer        67.75812      a
+M._officinalis_Summer  67.05326      a
+A._unedo_Winter        65.58807      a
+P._latifolia_Summer    58.38438      a
+Q._coccifera_Summer    49.22857      a
+P._latifolia_Winter    49.01297      a
+C._incanus_Summer      42.97321      a
+M._communis_Summer     35.51668      a
+L._stoechas_Winter     33.05557      a
+L._stoechas_Summer     28.47681      a
+
+attr(,"class")
+[1] "group"
+
+$`Fishers_a Kruskal`
+$statistics
+     Chisq   p.chisq
+  23.75532 0.0693668
+
+$parameters
+            test p.ajusted              name.t ntr alpha
+  Kruskal-Wallis       fdr my_setup$planttreat  16  0.05
+
+$means
+                      my_setup...myalphaindex.     rank      std r      Min       Max      Q25
+A._unedo_Summer                       67.75812 27.00000 13.62338 3 53.08685  80.00922 61.63257
+A._unedo_Winter                       65.58807 26.33333 29.80670 3 31.25306  84.82191 55.97115
+C._incanus_Summer                     42.97321 12.66667 13.54498 3 28.96074  55.99647 36.46158
+C._incanus_Winter                     73.12230 30.33333 19.32928 3 52.86154  91.36115 64.00287
+L._stoechas_Summer                    28.47681  7.00000 14.28477 3 20.01704  44.96960 20.23042
+L._stoechas_Winter                    33.05557 10.33333 20.82589 3 12.40955  54.05679 22.55496
+M._communis_Summer                    35.51668 12.00000 32.90838 2 12.24694  58.78642 23.88181
+M._communis_Winter                    96.86603 37.33333 34.52273 3 66.81205 134.57313 78.01248
+M._officinalis_Summer                 67.05326 25.66667 19.58944 3 46.16083  85.00787 58.07596
+M._officinalis_Winter                 82.09564 29.66667 42.62766 3 46.17666 129.20111 58.54291
+P._latifolia_Summer                   58.38438 21.33333  6.58533 3 52.63669  65.56979 54.79168
+P._latifolia_Winter                   49.01297 17.00000 35.09579 3 18.96825  87.58742 29.72574
+P._lentiscus_Summer                   71.27857 29.66667 23.34602 3 46.47207  92.82046 60.50763
+P._lentiscus_Winter                   99.96196 38.66667 25.41485 3 71.38546 120.03401 89.92593
+Q._coccifera_Summer                   49.22857 17.66667 21.38678 3 29.46613  71.93472 37.87550
+Q._coccifera_Winter                  100.03521 37.33333 34.59775 3 61.15695 127.43452 86.33556
+                            Q50       Q75
+A._unedo_Summer        70.17829  75.09376
+A._unedo_Winter        80.68924  82.75558
+C._incanus_Summer      43.96241  49.97944
+C._incanus_Winter      75.14421  83.25268
+L._stoechas_Summer     20.44379  32.70669
+L._stoechas_Winter     32.70038  43.37858
+M._communis_Summer     35.51668  47.15155
+M._communis_Winter     89.21291 111.89302
+M._officinalis_Summer  69.99109  77.49948
+M._officinalis_Winter  70.90916 100.05513
+P._latifolia_Summer    56.94667  61.25823
+P._latifolia_Winter    40.48323  64.03532
+P._lentiscus_Summer    74.54319  83.68182
+P._lentiscus_Winter   108.46641 114.25021
+Q._coccifera_Summer    46.28486  59.10979
+Q._coccifera_Winter   111.51417 119.47435
+
+$comparison
+NULL
+
+$groups
+                      my_setup[, myalphaindex] groups
+P._lentiscus_Winter                   38.66667      a
+M._communis_Winter                    37.33333      a
+Q._coccifera_Winter                   37.33333      a
+C._incanus_Winter                     30.33333      a
+M._officinalis_Winter                 29.66667      a
+P._lentiscus_Summer                   29.66667      a
+A._unedo_Summer                       27.00000      a
+A._unedo_Winter                       26.33333      a
+M._officinalis_Summer                 25.66667      a
+P._latifolia_Summer                   21.33333      a
+Q._coccifera_Summer                   17.66667      a
+P._latifolia_Winter                   17.00000      a
+C._incanus_Summer                     12.66667      a
+M._communis_Summer                    12.00000      a
+L._stoechas_Winter                    10.33333      a
+L._stoechas_Summer                     7.00000      a
+
+attr(,"class")
+[1] "group"
+
+$`Fishers_a Student's t tests`
+$`Fishers_a Student's t tests`$`t.test A._unedo`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = 8.0702, df = 2.0015, p-value = 0.01498
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 29.66279 97.31235
+sample estimates:
+mean of x mean of y 
+ 67.75812   4.27055 
+
+
+$`Fishers_a Student's t tests`$`t.test C._incanus`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = 4.9934, df = 2.0016, p-value = 0.03778
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+  5.428072 72.686073
+sample estimates:
+mean of x mean of y 
+42.973206  3.916133 
+
+
+$`Fishers_a Student's t tests`$`t.test L._stoechas`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = 2.9713, df = 2.0022, p-value = 0.09693
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -10.9464  59.9695
+sample estimates:
+mean of x mean of y 
+ 28.47681   3.96526 
+
+
+$`Fishers_a Student's t tests`$`t.test M._communis`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = 1.3229, df = 1.0001, p-value = 0.412
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -264.8340  326.4039
+sample estimates:
+mean of x mean of y 
+35.516680  4.731717 
+
+
+$`Fishers_a Student's t tests`$`t.test M._officinalis`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = 5.508, df = 2.0035, p-value = 0.03129
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+  13.72088 110.92469
+sample estimates:
+mean of x mean of y 
+67.053264  4.730479 
+
+
+$`Fishers_a Student's t tests`$`t.test P._latifolia`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = 14.244, df = 2.0192, p-value = 0.004708
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 38.03500 70.53431
+sample estimates:
+mean of x mean of y 
+58.384384  4.099725 
+
+
+$`Fishers_a Student's t tests`$`t.test P._lentiscus`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = 4.979, df = 2.0086, p-value = 0.03772
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+   9.364485 125.002760
+sample estimates:
+mean of x mean of y 
+71.278574  4.094951 
+
+
+$`Fishers_a Student's t tests`$`t.test Q._coccifera`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = 3.5837, df = 2.0004, p-value = 0.06979
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -8.868332 97.372725
+sample estimates:
+mean of x mean of y 
+49.228571  4.976375 
+
+
+
+$`Richness Shapiro`
+
+	Shapiro-Wilk normality test
+
+data:  my_setup[, myalphaindex]
+W = 0.97974, p-value = 0.5815
+
+
+$`Richness Levene`
+Levene's Test for Homogeneity of Variance (center = median)
+      Df F value Pr(>F)
+group 15  0.3628 0.9796
+      31               
+
+$`Richness ANOVA`
+$statistics
+   MSerror Df    Mean       CV
+  12434.75 31 328.383 33.95767
+
+$parameters
+   test     name.t ntr StudentizedRange alpha
+  Tukey planttreat  16         5.257189  0.05
+
+$means
+                      Richness       std r Min Max   Q25 Q50   Q75
+A._unedo_Summer       360.3333  54.45487 3 299 403 339.0 379 391.0
+A._unedo_Winter       358.0000 157.17188 3 177 460 307.0 437 448.5
+C._incanus_Summer     205.6667  92.14300 3 140 311 153.0 166 238.5
+C._incanus_Winter     365.0000  76.97402 3 280 430 332.5 385 407.5
+L._stoechas_Summer    185.3333  69.29887 3 139 265 145.5 152 208.5
+L._stoechas_Winter    167.6667 106.15712 3  65 277 113.0 161 219.0
+M._communis_Summer    203.0000 162.63456 2  88 318 145.5 203 260.5
+M._communis_Winter    454.3333 115.17089 3 347 576 393.5 440 508.0
+M._officinalis_Summer 356.3333  79.75797 3 271 429 320.0 369 399.0
+M._officinalis_Winter 375.6667 148.48008 3 238 533 297.0 356 444.5
+P._latifolia_Summer   323.0000  32.18695 3 297 359 305.0 313 336.0
+P._latifolia_Winter   264.3333 180.62761 3 110 463 165.0 220 341.5
+P._lentiscus_Summer   378.6667 116.12206 3 251 478 329.0 407 442.5
+P._lentiscus_Winter   462.0000  79.73080 3 379 538 424.0 469 503.5
+Q._coccifera_Summer   281.6667  98.28699 3 188 384 230.5 273 328.5
+Q._coccifera_Winter   471.3333 128.53923 3 325 566 424.0 523 544.5
+
+$comparison
+NULL
+
+$groups
+                      Richness groups
+Q._coccifera_Winter   471.3333      a
+P._lentiscus_Winter   462.0000      a
+M._communis_Winter    454.3333      a
+P._lentiscus_Summer   378.6667      a
+M._officinalis_Winter 375.6667      a
+C._incanus_Winter     365.0000      a
+A._unedo_Summer       360.3333      a
+A._unedo_Winter       358.0000      a
+M._officinalis_Summer 356.3333      a
+P._latifolia_Summer   323.0000      a
+Q._coccifera_Summer   281.6667      a
+P._latifolia_Winter   264.3333      a
+C._incanus_Summer     205.6667      a
+M._communis_Summer    203.0000      a
+L._stoechas_Summer    185.3333      a
+L._stoechas_Winter    167.6667      a
+
+attr(,"class")
+[1] "group"
+
+$`Richness Kruskal`
+$statistics
+     Chisq    p.chisq
+  23.46412 0.07477052
+
+$parameters
+            test p.ajusted              name.t ntr alpha
+  Kruskal-Wallis       fdr my_setup$planttreat  16  0.05
+
+$means
+                      my_setup...myalphaindex.      rank       std r Min Max   Q25 Q50   Q75
+A._unedo_Summer                       360.3333 27.500000  54.45487 3 299 403 339.0 379 391.0
+A._unedo_Winter                       358.0000 28.333333 157.17188 3 177 460 307.0 437 448.5
+C._incanus_Summer                     205.6667 11.333333  92.14300 3 140 311 153.0 166 238.5
+C._incanus_Winter                     365.0000 28.666667  76.97402 3 280 430 332.5 385 407.5
+L._stoechas_Summer                    185.3333  8.000000  69.29887 3 139 265 145.5 152 208.5
+L._stoechas_Winter                    167.6667  8.333333 106.15712 3  65 277 113.0 161 219.0
+M._communis_Summer                    203.0000 12.500000 162.63456 2  88 318 145.5 203 260.5
+M._communis_Winter                    454.3333 36.666667 115.17089 3 347 576 393.5 440 508.0
+M._officinalis_Summer                 356.3333 26.000000  79.75797 3 271 429 320.0 369 399.0
+M._officinalis_Winter                 375.6667 27.333333 148.48008 3 238 533 297.0 356 444.5
+P._latifolia_Summer                   323.0000 22.666667  32.18695 3 297 359 305.0 313 336.0
+P._latifolia_Winter                   264.3333 18.000000 180.62761 3 110 463 165.0 220 341.5
+P._lentiscus_Summer                   378.6667 29.666667 116.12206 3 251 478 329.0 407 442.5
+P._lentiscus_Winter                   462.0000 38.500000  79.73080 3 379 538 424.0 469 503.5
+Q._coccifera_Summer                   281.6667 19.000000  98.28699 3 188 384 230.5 273 328.5
+Q._coccifera_Winter                   471.3333 37.666667 128.53923 3 325 566 424.0 523 544.5
+
+$comparison
+NULL
+
+$groups
+                      my_setup[, myalphaindex] groups
+P._lentiscus_Winter                  38.500000      a
+Q._coccifera_Winter                  37.666667      a
+M._communis_Winter                   36.666667      a
+P._lentiscus_Summer                  29.666667      a
+C._incanus_Winter                    28.666667      a
+A._unedo_Winter                      28.333333      a
+A._unedo_Summer                      27.500000      a
+M._officinalis_Winter                27.333333      a
+M._officinalis_Summer                26.000000      a
+P._latifolia_Summer                  22.666667      a
+Q._coccifera_Summer                  19.000000      a
+P._latifolia_Winter                  18.000000      a
+M._communis_Summer                   12.500000      a
+C._incanus_Summer                    11.333333      a
+L._stoechas_Winter                    8.333333      a
+L._stoechas_Summer                    8.000000      a
+
+attr(,"class")
+[1] "group"
+
+$`Richness Student's t tests`
+$`Richness Student's t tests`$`t.test A._unedo`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = 11.325, df = 2.0001, p-value = 0.007705
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 220.7938 491.3318
+sample estimates:
+mean of x mean of y 
+360.33333   4.27055 
+
+
+$`Richness Student's t tests`$`t.test C._incanus`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = 3.7924, df = 2, p-value = 0.06303
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -27.14264 430.64371
+sample estimates:
+ mean of x  mean of y 
+205.666667   3.916133 
+
+
+$`Richness Student's t tests`$`t.test L._stoechas`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = 4.533, df = 2.0001, p-value = 0.04537
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+   9.225792 353.510354
+sample estimates:
+mean of x mean of y 
+185.33333   3.96526 
+
+
+$`Richness Student's t tests`$`t.test M._communis`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = 1.7241, df = 1, p-value = 0.3346
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -1262.935  1659.471
+sample estimates:
+ mean of x  mean of y 
+203.000000   4.731717 
+
+
+$`Richness Student's t tests`$`t.test M._officinalis`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = 7.6353, df = 2.0002, p-value = 0.01672
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 153.4881 549.7176
+sample estimates:
+ mean of x  mean of y 
+356.333333   4.730479 
+
+
+$`Richness Student's t tests`$`t.test P._latifolia`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = 17.159, df = 2.0008, p-value = 0.003373
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 238.9662 398.8344
+sample estimates:
+ mean of x  mean of y 
+323.000000   4.099725 
+
+
+$`Richness Student's t tests`$`t.test P._lentiscus`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = 5.5868, df = 2.0003, p-value = 0.03057
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+  86.14409 662.99934
+sample estimates:
+ mean of x  mean of y 
+378.666667   4.094951 
+
+
+$`Richness Student's t tests`$`t.test Q._coccifera`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = 4.8759, df = 2, p-value = 0.03958
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+  32.53342 520.84716
+sample estimates:
+ mean of x  mean of y 
+281.666667   4.976375 
+
+
+
+$`Pielous_eveness Shapiro`
+
+	Shapiro-Wilk normality test
+
+data:  my_setup[, myalphaindex]
+W = 0.90291, p-value = 0.0008927
+
+
+$`Pielous_eveness Levene`
+Levene's Test for Homogeneity of Variance (center = median)
+      Df F value Pr(>F)
+group 15  0.5154 0.9126
+      31               
+
+$`Pielous_eveness ANOVA`
+$statistics
+      MSerror Df      Mean       CV
+  0.005287229 31 0.5972187 12.17533
+
+$parameters
+   test     name.t ntr StudentizedRange alpha
+  Tukey planttreat  16         5.257189  0.05
+
+$means
+                      Pielous_eveness        std r       Min       Max       Q25       Q50
+A._unedo_Summer             0.4639831 0.03853478 3 0.4195825 0.4887071 0.4516211 0.4836596
+A._unedo_Winter             0.7394032 0.05266034 3 0.6819980 0.7854723 0.7163686 0.7507392
+C._incanus_Summer           0.5371988 0.09756900 3 0.4422931 0.6372291 0.4871836 0.5320740
+C._incanus_Winter           0.6668302 0.06360458 3 0.6077860 0.7341793 0.6331557 0.6585253
+L._stoechas_Summer          0.3637675 0.08131696 3 0.2713651 0.4244183 0.3334421 0.3955191
+L._stoechas_Winter          0.8050407 0.05991532 3 0.7397990 0.8575985 0.7787619 0.8177247
+M._communis_Summer          0.3710754 0.05649684 2 0.3311261 0.4110247 0.3511007 0.3710754
+M._communis_Winter          0.7757768 0.01240196 3 0.7653611 0.7894960 0.7689172 0.7724734
+M._officinalis_Summer       0.3879808 0.02567281 3 0.3596702 0.4097501 0.3770962 0.3945222
+M._officinalis_Winter       0.8033561 0.04704959 3 0.7734940 0.8575918 0.7762383 0.7789826
+P._latifolia_Summer         0.4601043 0.02857477 3 0.4312320 0.4883720 0.4459705 0.4607090
+P._latifolia_Winter         0.7625387 0.08838114 3 0.6687158 0.8442234 0.7216963 0.7746769
+P._lentiscus_Summer         0.4699276 0.08987267 3 0.3662144 0.5249122 0.4424353 0.5186561
+P._lentiscus_Winter         0.6658591 0.16294085 3 0.4798557 0.7833920 0.6070926 0.7343295
+Q._coccifera_Summer         0.3943277 0.06798813 3 0.3239100 0.4595932 0.3616950 0.3994800
+Q._coccifera_Winter         0.8129477 0.03777582 3 0.7693582 0.8361486 0.8013473 0.8333364
+                            Q75
+A._unedo_Summer       0.4861834
+A._unedo_Winter       0.7681058
+C._incanus_Summer     0.5846516
+C._incanus_Winter     0.6963523
+L._stoechas_Summer    0.4099687
+L._stoechas_Winter    0.8376616
+M._communis_Summer    0.3910500
+M._communis_Winter    0.7809847
+M._officinalis_Summer 0.4021362
+M._officinalis_Winter 0.8182872
+P._latifolia_Summer   0.4745405
+P._latifolia_Winter   0.8094501
+P._lentiscus_Summer   0.5217842
+P._lentiscus_Winter   0.7588608
+Q._coccifera_Summer   0.4295366
+Q._coccifera_Winter   0.8347425
+
+$comparison
+NULL
+
+$groups
+                      Pielous_eveness groups
+Q._coccifera_Winter         0.8129477      a
+L._stoechas_Winter          0.8050407      a
+M._officinalis_Winter       0.8033561      a
+M._communis_Winter          0.7757768      a
+P._latifolia_Winter         0.7625387      a
+A._unedo_Winter             0.7394032     ab
+C._incanus_Winter           0.6668302    abc
+P._lentiscus_Winter         0.6658591    abc
+C._incanus_Summer           0.5371988    bcd
+P._lentiscus_Summer         0.4699276     cd
+A._unedo_Summer             0.4639831     cd
+P._latifolia_Summer         0.4601043     cd
+Q._coccifera_Summer         0.3943277      d
+M._officinalis_Summer       0.3879808      d
+M._communis_Summer          0.3710754      d
+L._stoechas_Summer          0.3637675      d
+
+attr(,"class")
+[1] "group"
+
+$`Pielous_eveness Kruskal`
+$statistics
+     Chisq      p.chisq
+  39.21365 0.0005953922
+
+$parameters
+            test p.ajusted              name.t ntr alpha
+  Kruskal-Wallis       fdr my_setup$planttreat  16  0.05
+
+$means
+                      my_setup...myalphaindex.      rank        std r       Min       Max
+A._unedo_Summer                      0.4639831 16.333333 0.03853478 3 0.4195825 0.4887071
+A._unedo_Winter                      0.7394032 33.333333 0.05266034 3 0.6819980 0.7854723
+C._incanus_Summer                    0.5371988 20.666667 0.09756900 3 0.4422931 0.6372291
+C._incanus_Winter                    0.6668302 26.333333 0.06360458 3 0.6077860 0.7341793
+L._stoechas_Summer                   0.3637675  6.666667 0.08131696 3 0.2713651 0.4244183
+L._stoechas_Winter                   0.8050407 40.000000 0.05991532 3 0.7397990 0.8575985
+M._communis_Summer                   0.3710754  6.500000 0.05649684 2 0.3311261 0.4110247
+M._communis_Winter                   0.7757768 36.333333 0.01240196 3 0.7653611 0.7894960
+M._officinalis_Summer                0.3879808  6.333333 0.02567281 3 0.3596702 0.4097501
+M._officinalis_Winter                0.8033561 40.000000 0.04704959 3 0.7734940 0.8575918
+P._latifolia_Summer                  0.4601043 16.000000 0.02857477 3 0.4312320 0.4883720
+P._latifolia_Winter                  0.7625387 36.333333 0.08838114 3 0.6687158 0.8442234
+P._lentiscus_Summer                  0.4699276 16.000000 0.08987267 3 0.3662144 0.5249122
+P._lentiscus_Winter                  0.6658591 28.666667 0.16294085 3 0.4798557 0.7833920
+Q._coccifera_Summer                  0.3943277  8.333333 0.06798813 3 0.3239100 0.4595932
+Q._coccifera_Winter                  0.8129477 40.333333 0.03777582 3 0.7693582 0.8361486
+                            Q25       Q50       Q75
+A._unedo_Summer       0.4516211 0.4836596 0.4861834
+A._unedo_Winter       0.7163686 0.7507392 0.7681058
+C._incanus_Summer     0.4871836 0.5320740 0.5846516
+C._incanus_Winter     0.6331557 0.6585253 0.6963523
+L._stoechas_Summer    0.3334421 0.3955191 0.4099687
+L._stoechas_Winter    0.7787619 0.8177247 0.8376616
+M._communis_Summer    0.3511007 0.3710754 0.3910500
+M._communis_Winter    0.7689172 0.7724734 0.7809847
+M._officinalis_Summer 0.3770962 0.3945222 0.4021362
+M._officinalis_Winter 0.7762383 0.7789826 0.8182872
+P._latifolia_Summer   0.4459705 0.4607090 0.4745405
+P._latifolia_Winter   0.7216963 0.7746769 0.8094501
+P._lentiscus_Summer   0.4424353 0.5186561 0.5217842
+P._lentiscus_Winter   0.6070926 0.7343295 0.7588608
+Q._coccifera_Summer   0.3616950 0.3994800 0.4295366
+Q._coccifera_Winter   0.8013473 0.8333364 0.8347425
+
+$comparison
+NULL
+
+$groups
+                      my_setup[, myalphaindex] groups
+Q._coccifera_Winter                  40.333333      a
+L._stoechas_Winter                   40.000000      a
+M._officinalis_Winter                40.000000      a
+M._communis_Winter                   36.333333     ab
+P._latifolia_Winter                  36.333333     ab
+A._unedo_Winter                      33.333333     ab
+P._lentiscus_Winter                  28.666667    abc
+C._incanus_Winter                    26.333333    bcd
+C._incanus_Summer                    20.666667     cd
+A._unedo_Summer                      16.333333     de
+P._latifolia_Summer                  16.000000     de
+P._lentiscus_Summer                  16.000000     de
+Q._coccifera_Summer                   8.333333      e
+L._stoechas_Summer                    6.666667      e
+M._communis_Summer                    6.500000      e
+M._officinalis_Summer                 6.333333      e
+
+attr(,"class")
+[1] "group"
+
+$`Pielous_eveness Student's t tests`
+$`Pielous_eveness Student's t tests`$`t.test A._unedo`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -24.989, df = 2.0871, p-value = 0.001279
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -4.436463 -3.176672
+sample estimates:
+mean of x mean of y 
+0.4639831 4.2705504 
+
+
+$`Pielous_eveness Student's t tests`$`t.test C._incanus`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -20.536, df = 2.5219, p-value = 0.0007128
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -3.963462 -2.794407
+sample estimates:
+mean of x mean of y 
+0.5371988 3.9161332 
+
+
+$`Pielous_eveness Student's t tests`$`t.test L._stoechas`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -18.162, df = 2.2367, p-value = 0.001787
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -4.373768 -2.829218
+sample estimates:
+mean of x mean of y 
+0.3637675 3.9652603 
+
+
+$`Pielous_eveness Student's t tests`$`t.test M._communis`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -28.302, df = 2.275, p-value = 0.0006013
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -4.952396 -3.768886
+sample estimates:
+mean of x mean of y 
+0.3710754 4.7317166 
+
+
+$`Pielous_eveness Student's t tests`$`t.test M._officinalis`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -12.877, df = 2.0077, p-value = 0.005889
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -5.788142 -2.896853
+sample estimates:
+mean of x mean of y 
+0.3879808 4.7304787 
+
+
+$`Pielous_eveness Student's t tests`$`t.test P._latifolia`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -13.796, df = 2.0157, p-value = 0.005054
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -4.766312 -2.512929
+sample estimates:
+mean of x mean of y 
+0.4601043 4.0997250 
+
+
+$`Pielous_eveness Student's t tests`$`t.test P._lentiscus`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -5.7747, df = 2.0275, p-value = 0.02781
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -6.2911437 -0.9589038
+sample estimates:
+mean of x mean of y 
+0.4699276 4.0949513 
+
+
+$`Pielous_eveness Student's t tests`$`t.test Q._coccifera`
+
+	Welch Two Sample t-test
+
+data:  my_setup[, myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"] and my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"]
+t = -36.142, df = 2.4194, p-value = 0.0002292
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -5.046229 -4.117865
+sample estimates:
+mean of x mean of y 
+0.3943277 4.9763746 
+
+
+

@@ -1,0 +1,10 @@
+Permutation test for adonis under reduced model
+Terms added sequentially (first to last)
+Permutation: free
+Number of permutations: 999
+
+adonis2(formula = mycanmattr ~ Aromatic, data = design2, permutations = 999, method = "bray")
+         Df SumOfSqs      R2     F Pr(>F)
+Aromatic  1   0.2542 0.02559 1.208  0.282
+Residual 46   9.6809 0.97441             
+Total    47   9.9351 1.00000             
