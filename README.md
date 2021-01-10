@@ -1,10 +1,3 @@
-# armenistis_nk_2021
----
-title: "Factors structuring the epiphytic archaeal and fungal communities in a semi-arid Mediterranean ecosystem"
-output: html_document
-bibliography: citations.bib
----
-
 # ***Factors structuring the epiphytic archaeal and fungal communities in a semi-arid Mediterranean ecosystem***
 
 This repository contains all the necessary code and instructions for reproducing the results found in our study (see citation section below). The bash code provided in this file can be found as a single script [file](bash_code.sh).
@@ -75,7 +68,7 @@ $ cd ..
 ```
 ### 2) Demultiplex data using the script prepared by Sotirios Vasileiadis which is based on the [Flexbar v3.5 software](https://github.com/seqan/flexbar)
 
-Our script is adapted to our multiplexing system able to fish out sample-specific sequences form both the forward and the reverse reads as shown in the figure below. This approach has been used in several of our previous publications [@RN16;@RN15;@RN12;@RN11;@RN8;@RN7;@RN3;@RN6;@RN4;@RN13;@RN10;@RN9;@RN2;@RN14;@RN17;@RN5;@RN1].
+Our script is adapted to our multiplexing system able to fish out sample-specific sequences form both the forward and the reverse reads as shown in the figure below. This approach has been used in several of our previous publications [1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17].
 
 ![figure](sequencing_fig.png)
 **Figure** ***Schematic of the implemented multiplex sequencing approach.***
@@ -159,3 +152,37 @@ You running this script/function means you will not blame the author(s) if this 
 
 # Referenced literature
 
+<a id="1">[1]</a>
+Christou, M.L., Vasileiadis, S., Kalamaras, S.D., Karpouzas, D.G., Angelidaki, I. and Kotsopoulos, T.A. (2020) Ammonia-induced inhibition of manure-based continuous biomethanation process under different organic loading rates and associated microbial community dynamics. Bioresource Technology, 124323.
+<a id="2">[2]</a>
+Diquattro, S., Garau, G., Mangia, N.P., Drigo, B., Lombi, E., Vasileiadis, S. and Castaldi, P. (2020) Mobility and potential bioavailability of antimony in contaminated soils: Short-term impact on microbial community and soil biochemical functioning. Ecotoxicology and Environmental Safety 196, 110576.
+<a id="3">[3]</a>
+Kalamaras, S.D., Vasileiadis, S., Karas, P., Angelidaki, I. and Kotsopoulos, T.A. (2020) Microbial adaptation to high ammonia levels during anaerobic digestion of manure-based feedstock; Biomethanation and 16S rRNA gene sequencing. Journal of Chemical Technology and Biotechnology.
+<a id="4">[4]</a>
+Katsoula, A., Vasileiadis, S., Sapountzi, M. and Karpouzas, D.G. (2020) The response of soil and phyllosphere microbial communities to repeated application of the fungicide iprodione: Accelerated biodegradation or toxicity? FEMS Microbiology Ecology.
+<a id="5">[5]</a>
+Ogbughalu, O.T., Vasileiadis, S., Schumann, R.C., Gerson, A.R., Li, J., Smart, R.S.C. and Short, M.D. (2020) Role of microbial diversity for sustainable pyrite oxidation control in acid and metalliferous drainage prevention. Journal of Hazardous Materials 393, 122338.
+<a id="6">[6]</a>
+Papadopoulos, C., Karas, P.A., Vasileiadis, S., Ligda, P., Saratsis, A., Sotiraki, S. and Karpouzas, D.G. (2020) Host Species Determines the Composition of the Prokaryotic Microbiota in Phlebotomus Sandflies. Pathogens (Basel, Switzerland) 9, 428.
+<a id="7">[7]</a>
+Vasileiadis, S., Perruchon, C., Scheer, B., Adrian, L., Steinbach, N., Trevisan, M., Plaza-Bolanos, P., Aguera, A., Chatzinotas, A. and Karpouzas, D.G. (2020) Nutritional inter-dependencies and a carbazole-dioxygenase are key elements of a bacterial consortium relying on a Sphingomonas for the degradation of the fungicide thiabendazol. bioRxiv, 2020.2003.2030.015693.
+<a id="8">[8]</a>
+Soldi, S., Vasileiadis, S., Lohner, S., Uggeri, F., Puglisi, E., Molinari, P., Donner, E., Sieland, C., Decsi, T., Sailer, M. and Theis, S. (2019) Prebiotic supplementation over a cold season and during antibiotic treatment specifically modulates the gut microbiota composition of 3-6 year-old children. Beneficial Microbes 0(0), 1-11.
+<a id="9">[9]</a>
+Suciu, N., Vasileiadis, S., Puglisi, E., Pertile, G., Tourna, M., Karas, P.Α., Papolla, A., Ferrarini, A., Sulowic, S., Fornasier, F., Lucini, L., Karpouzas, D.G. and Trevisan, M. (2019) Azadirachtin and trifloxystrobin had no inhibitory effects on key soil microbial functions even at high dose rates. Applied Soil Ecology 137, 29-38.
+<a id="10">[10]</a>
+Algora, C., Vasileiadis, S., Wasmund, K., Trevisan, M., Kruger, M., Puglisi, E. and Adrian, L. (2015) Manganese and iron as structuring parameters of microbial communities in Arctic marine sediments from the Baffin Bay. FEMS Microbiology Ecology 91(6).
+<a id="11">[11]</a>
+Hassan, H., Jin, B., Donner, E., Vasileiadis, S., Saint, C. and Dai, S. (2018) Microbial community and bioelectrochemical activities in MFC for degrading phenol and producing electricity: Microbial consortia could make differences. Chemical Engineering Journal 332(Supplement C), 647-657.
+<a id="12">[12]</a>
+Lohner, S., Jakobik, V., Mihályi, K., Soldi, S., Vasileiadis, S., Theis, S., Sailer, M., Sieland, C., Berényi, K., Boehm, G. and Decsi, T. (2018) Inulin-type fructan supplementation of 3 to 6 year-old children is associated with higher fecal bifidobacterium concentrations and fewer febrile episodes requiring medical attention. The Journal of Nutrition 148(8), 1300-1308.
+<a id="13">[13]</a>
+Mandal, S., Donner, E., Vasileiadis, S., Skinner, W., Smith, E. and Lombi, E. (2018) The effect of biochar feedstock, pyrolysis temperature, and application rate on the reduction of ammonia volatilisation from biochar-amended soil. Science of the Total Environment 627, 942-950.
+<a id="14">[14]</a>
+Vasileiadis, S., Puglisi, E., Papadopoulou, E.S., Pertile, G., Suciu, N., Pappolla, R.A., Tourna, M., Karas, P.A., Papadimitriou, F., Kasiotakis, A., Ipsilanti, N., Ferrarini, A., Sułowicz, S., Fornasier, F., Menkissoglu-Spiroudi, U., Nicol, G.W., Trevisan, M. and Karpouzas, D.G. (2018) Blame it on the metabolite: 3,5-dichloraniline rather than the parent compound is responsible for decreasing diversity and function of soil microorganisms. Applied and Environmental Microbiology 84(22), e01536-01518.
+<a id="15">[15]</a>
+Garau, G., Silvetti, M., Vasileiadis, S., Donner, E., Diquattro, S., Deiana, S., Lombi, E. and Castaldi, P. (2017) Use of municipal solid wastes for chemical and microbiological recovery of soils contaminated with metal(loid)s. Soil Biology & Biochemistry 111, 25-35.
+<a id="16">[16]</a>
+Soldi, S., Vasileiadis, S., Uggeri, F., Campanale, M., Morelli, L., Fogli, M., Calanni, F., Grimaldi, M. and A, G. (2015) Modulation of the gut microbiota composition by rifaximin in non-constipated irritable bowel syndrome patients: a molecular approach. Clinical and Experimental Gastroenterology 8, 309-325.
+<a id="17">[17]</a>
+Vasileiadis, S., Puglisi, E., Trevisan, M., Scheckel, K.G., Langdon, K.A., McLaughlin, M.J., Lombi, E. and Donner, E. (2015) Changes in soil bacterial communities and diversity in response to long-term silver exposure. FEMS Microbiology Ecology 91(10), fiv114.
