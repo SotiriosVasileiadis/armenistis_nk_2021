@@ -28,6 +28,13 @@ for (indpvar in indpvars){
 # save the outputs into a list (the associated bar-plot was prepared in excel with the significance letters being added manually)
 capture.output(mystatsout, file = "qpcr_stats_out.txt")
 
+#### figure 1
+#### select according to season and test per plant
+
+#### pairise comparisons according to season within each plant
 
 
+#### figure S2
+#### test within each season the aromatic character 
 
+#### test seasons within each aromatic character group
