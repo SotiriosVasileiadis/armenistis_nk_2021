@@ -70,7 +70,7 @@ cd ..
 #  ### 2) Demultiplex data using the script prepared by Sotirios Vasileiadis which is based on the [Flexbar v3.5 software](https://github.com/seqan/flexbar)
 #  Start with the prokaryotes
 #  ```
-cd 2_demultiplex_data/bac
+cd 2_demultiplex_data/prok
 #  ```
 #  You can test the "DemuxOwnBCsys_absPATH.sh" for necessary arguments with "sh DemuxOwnBCsys_absPATH.sh"
 #  Run the demultiplexing process by calling the "run_demux.sh" bash script which is created by the run_demux_pre.sh script after replacing the absolute path value with the current directory path 
@@ -100,11 +100,11 @@ cd ../../
 #  
 #  ### 3) Quality trim the sequence reads with [TrimmomaticPE v0.39](http://www.usadellab.org/cms/?page=trimmomatic) and pair assemble with [FLASH v1.2.11](https://ccb.jhu.edu/software/FLASH/#:~:text=FLASH%20is%20designed%20to%20merge,to%20merge%20RNA-seq%20data.)
 #  ```
-cd 3_qc_trim_pair_assemble/bac
+cd 3_qc_trim_pair_assemble/prok
 
 for i in `cat mylist`
 	do
-	TrimmomaticPE -threads 4 -phred33 ../../2_demultiplex_data/bac/NP2_out/lOTUs_moth_basis/${i}_lib_R1.fastq ../../2_demultiplex_data/bac/NP2_out/lOTUs_moth_basis/${i}_lib_R2.fastq trimmed/${i}_tr_R1.fastq trimmed/${i}_tr_R1_unpaired.fastq trimmed/${i}_tr_R2.fastq trimmed/${i}_tr_R2_unpaired.fastq LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:100
+	TrimmomaticPE -threads 4 -phred33 ../../2_demultiplex_data/prok/NP2_out/lOTUs_moth_basis/${i}_lib_R1.fastq ../../2_demultiplex_data/prok/NP2_out/lOTUs_moth_basis/${i}_lib_R2.fastq trimmed/${i}_tr_R1.fastq trimmed/${i}_tr_R1_unpaired.fastq trimmed/${i}_tr_R2.fastq trimmed/${i}_tr_R2_unpaired.fastq LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:100
 	flash -m 10 -M 250 -x 0.1 -p 33 -d combined_merged -o ${i} --compress-prog=gzip --suffix=gz -t 4 trimmed/${i}_tr_R1.fastq trimmed/${i}_tr_R2.fastq
 	done
 
@@ -119,8 +119,8 @@ for i in `cat mylist`
 #  
 #  ### 4) Prep of the OTU and taxonomy matrices with [LotuS v1.58](http://psbweb05.psb.ugent.be/lotus/) wrapper
 #  ```
-cd 4_run_lotus/bac
-lotus.pl -i ../../3_qc_trim_pair_assemble/bac/combined_merged -o lotus_out -m map -p hiSeq -c lOTUs.cfg -s sdm_hiSeq.txt -t lotus_tmp -threads 8 -refDB SLV -tax_group bacteria -amplicon_type SSU -useBestBlastHitOnly 0 -simBasedTaxo 2 -keepUnclassified 1 -LCA_frac 0.3
+cd 4_run_lotus/prok
+lotus.pl -i ../../3_qc_trim_pair_assemble/prok/combined_merged -o lotus_out -m map -p hiSeq -c lOTUs.cfg -s sdm_hiSeq.txt -t lotus_tmp -threads 8 -refDB SLV -tax_group bacteria -amplicon_type SSU -useBestBlastHitOnly 0 -simBasedTaxo 2 -keepUnclassified 1 -LCA_frac 0.3
 cd ../../
 
 cd 4_run_lotus/fung
