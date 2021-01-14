@@ -1,5 +1,6 @@
 # ***Factors structuring the epiphytic archaeal and fungal communities in a semi-arid Mediterranean ecosystem***
-## ***By Katsoula A, Vasileiadis S, Karamanoli K, Vokou D\*, Karpouzas DG\* \n(\* corr. authors)***
+## ***By Katsoula A, Vasileiadis S, Karamanoli K, Vokou D\*, Karpouzas DG\* ***
+### ***(\* corr. authors)***
 
 This repository contains all the necessary code and instructions for reproducing the results found in our study (see citation section below). We also provide the final OTU matrices with their annotations and the statistical analysis output files (in the output directories of the 5_statistical_analysis folder). The bash code provided in this file can be found as a single script [file](bash_code.sh).
 
