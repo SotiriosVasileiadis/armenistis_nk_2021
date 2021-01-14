@@ -597,6 +597,19 @@ for(my_tax_lev in my_tax_lvls[3:length(my_tax_lvls)]){
   cairo_pdf(height = 4, width = 8, file = paste("output/barplots/",my_tax_lev,"_facet.pdf", sep = ""))
   print(p + scale_fill_manual(values=mycols) + ylab("Relative abundance (%)") + xlab("") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)))
   dev.off()
+  
+  # T-test for the Hypocreales Capnodiales and Pleosporales differences in relative abundance between Winter and Summer 
+  if(my_tax_lev == "Order"){
+    mystats_ttest <- list()
+    
+    for(mytxn in c("Hypocreales","Capnodiales","Pleosporales")){
+      my_phydata_rafr_plot_bar_aggr <- tax_glom(my_phydata_rafr_plot_bar, taxrank=my_tax_lev)
+      my_phydata_rafr_plot_bar_aggr_table1 <- merge(t(data.frame(my_phydata_rafr_plot_bar_aggr@otu_table)),data.frame(my_phydata_rafr_plot_bar_aggr@tax_table), by = "row.names")
+      mystats_ttest[[paste("T.test",mytxn)]] <- t.test(my_phydata_rafr_plot_bar_aggr_table1[my_phydata_rafr_plot_bar_aggr_table1$Order == mytxn,grep("Summer",colnames(my_phydata_rafr_plot_bar_aggr_table1))],my_phydata_rafr_plot_bar_aggr_table1[my_phydata_rafr_plot_bar_aggr_table1$Order == mytxn,grep("Winter",colnames(my_phydata_rafr_plot_bar_aggr_table1))])
+    }
+    capture.output(mystats_ttest,file="output/Hypocreales_Capnodiales_Pleosporales_t.test.txt")
+  }
+  
 }
 
 

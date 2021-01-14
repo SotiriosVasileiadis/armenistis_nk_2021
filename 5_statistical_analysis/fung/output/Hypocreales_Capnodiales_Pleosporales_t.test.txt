@@ -1,0 +1,42 @@
+$`T.test Hypocreales`
+
+	Welch Two Sample t-test
+
+data:  my_phydata_rafr_plot_bar_aggr_table1[my_phydata_rafr_plot_bar_aggr_table1$Order == mytxn, grep("Summer", colnames(my_phydata_rafr_plot_bar_aggr_table1))] and my_phydata_rafr_plot_bar_aggr_table1[my_phydata_rafr_plot_bar_aggr_table1$Order == mytxn, grep("Winter", colnames(my_phydata_rafr_plot_bar_aggr_table1))]
+t = 16.501, df = 13.299, p-value = 3.051e-10
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 55.73075 72.47839
+sample estimates:
+mean of x mean of y 
+69.397534  5.292965 
+
+
+$`T.test Capnodiales`
+
+	Welch Two Sample t-test
+
+data:  my_phydata_rafr_plot_bar_aggr_table1[my_phydata_rafr_plot_bar_aggr_table1$Order == mytxn, grep("Summer", colnames(my_phydata_rafr_plot_bar_aggr_table1))] and my_phydata_rafr_plot_bar_aggr_table1[my_phydata_rafr_plot_bar_aggr_table1$Order == mytxn, grep("Winter", colnames(my_phydata_rafr_plot_bar_aggr_table1))]
+t = -3.4901, df = 9.6649, p-value = 0.006128
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -24.253033  -5.298051
+sample estimates:
+mean of x mean of y 
+  3.63937  18.41491 
+
+
+$`T.test Pleosporales`
+
+	Welch Two Sample t-test
+
+data:  my_phydata_rafr_plot_bar_aggr_table1[my_phydata_rafr_plot_bar_aggr_table1$Order == mytxn, grep("Summer", colnames(my_phydata_rafr_plot_bar_aggr_table1))] and my_phydata_rafr_plot_bar_aggr_table1[my_phydata_rafr_plot_bar_aggr_table1$Order == mytxn, grep("Winter", colnames(my_phydata_rafr_plot_bar_aggr_table1))]
+t = -2.8355, df = 10.47, p-value = 0.01695
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -8.948791 -1.100102
+sample estimates:
+mean of x mean of y 
+ 8.105396 13.129842 
+
+
