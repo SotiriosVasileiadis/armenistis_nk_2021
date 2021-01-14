@@ -17,9 +17,9 @@ Summer_Arbutus_5	Higher_canopy_Summer	No_aromatic_Summer	A._unedo	Summer	A._uned
 Summer_Myrtus_2	Higher_canopy_Summer	Aromatic_Summer	M._communis	Summer	M._communis_Summer	Higher_canopy	Aromatic	1.56E+07	6.05E+07	3.19E+04	9.31E+04	1.68E+04
 Summer_Myrtus_3	Higher_canopy_Summer	Aromatic_Summer	M._communis	Summer	M._communis_Summer	Higher_canopy	Aromatic	2.39E+07	9.23E+07	9.90E+03	1.97E+05	2.19E+04
 Summer_Myrtus_1	Higher_canopy_Summer	Aromatic_Summer	M._communis	Summer	M._communis_Summer	Higher_canopy	Aromatic	3.00E+07	8.14E+07	1.29E+04	5.52E+04	1.17E+04
-Summer_Cistus_1	Lower_canopy_Summer	No_aromatic_Summer	C._incanus_	Summer	C._incanus__Summer	Lower_canopy	No_aromatic	8.51E+06	5.35E+07	1.77E+04	5.54E+05	1.70E+04
-Summer_Cistus_4	Lower_canopy_Summer	No_aromatic_Summer	C._incanus_	Summer	C._incanus__Summer	Lower_canopy	No_aromatic	5.97E+07	2.44E+08	2.01E+04	2.55E+05	7.76E+04
- Summer_Cistus_5	Lower_canopy_Summer	No_aromatic_Summer	C._incanus_	Summer	C._incanus__Summer	Lower_canopy	No_aromatic	3.76E+06	1.89E+07	3.67E+03	0.00E+00	1.54E+03
+Summer_Cistus_1	Lower_canopy_Summer	No_aromatic_Summer	C._incanus	Summer	C._incanus_Summer	Lower_canopy	No_aromatic	8.51E+06	5.35E+07	1.77E+04	5.54E+05	1.70E+04
+Summer_Cistus_4	Lower_canopy_Summer	No_aromatic_Summer	C._incanus	Summer	C._incanus_Summer	Lower_canopy	No_aromatic	5.97E+07	2.44E+08	2.01E+04	2.55E+05	7.76E+04
+ Summer_Cistus_5	Lower_canopy_Summer	No_aromatic_Summer	C._incanus	Summer	C._incanus_Summer	Lower_canopy	No_aromatic	3.76E+06	1.89E+07	3.67E+03	0.00E+00	1.54E+03
 Summer_Mellissa_2	Lower_canopy_Summer	Aromatic_Summer	M._officinalis	Summer	M._officinalis_Summer	Lower_canopy	Aromatic	2.19E+07	2.42E+08	5.24E+04	2.75E+01	1.26E+04
 Summer_Mellissa_3	Lower_canopy_Summer	Aromatic_Summer	M._officinalis	Summer	M._officinalis_Summer	Lower_canopy	Aromatic	3.55E+07	4.73E+08	1.09E+05	5.96E+03	5.08E+04
 Summer_Mellissa_5	Lower_canopy_Summer	Aromatic_Summer	M._officinalis	Summer	M._officinalis_Summer	Lower_canopy	Aromatic	1.14E+07	3.00E+08	9.92E+03	1.18E+04	1.52E+04
@@ -41,9 +41,9 @@ Winter_Arbutus_3	Higher_canopy_Winter	No_aromatic_Winter	A._unedo	Winter	A._uned
 Winter_Myrtus_4	Higher_canopy_Winter	Aromatic_Winter	M._communis	Winter	M._communis_Winter	Higher_canopy	Aromatic	3.87E+06	1.54E+08	3.89E+03	3.42E+04	3.19E+04
 Winter_Myrtus_5	Higher_canopy_Winter	Aromatic_Winter	M._communis	Winter	M._communis_Winter	Higher_canopy	Aromatic	3.57E+06	3.30E+08	3.17E+03	3.23E+04	3.49E+03
 Winter_Myrtus_3	Higher_canopy_Winter	Aromatic_Winter	M._communis	Winter	M._communis_Winter	Higher_canopy	Aromatic	3.35E+06	3.47E+08	2.31E+03	1.73E+04	3.72E+03
-Winter_Cistus_1	Lower_canopy_Winter	No_aromatic_Winter	C._incanus_	Winter	C._incanus__Winter	Lower_canopy	No_aromatic	5.02E+05	2.67E+07	1.13E+04	2.41E+04	1.31E+03
-Winter_Cistus_2	Lower_canopy_Winter	No_aromatic_Winter	C._incanus_	Winter	C._incanus__Winter	Lower_canopy	No_aromatic	3.20E+05	1.80E+07	4.37E+04	2.55E+03	5.68E+02
-Winter_Cistus_3	Lower_canopy_Winter	No_aromatic_Winter	C._incanus_	Winter	C._incanus__Winter	Lower_canopy	No_aromatic	3.38E+05	1.17E+07	1.80E+03	1.80E+03	3.67E+03
+Winter_Cistus_1	Lower_canopy_Winter	No_aromatic_Winter	C._incanus	Winter	C._incanus_Winter	Lower_canopy	No_aromatic	5.02E+05	2.67E+07	1.13E+04	2.41E+04	1.31E+03
+Winter_Cistus_2	Lower_canopy_Winter	No_aromatic_Winter	C._incanus	Winter	C._incanus_Winter	Lower_canopy	No_aromatic	3.20E+05	1.80E+07	4.37E+04	2.55E+03	5.68E+02
+Winter_Cistus_3	Lower_canopy_Winter	No_aromatic_Winter	C._incanus	Winter	C._incanus_Winter	Lower_canopy	No_aromatic	3.38E+05	1.17E+07	1.80E+03	1.80E+03	3.67E+03
 Winter_Mellissa_2	Lower_canopy_Winter	Aromatic_Winter	M._officinalis	Winter	M._officinalis_Winter	Lower_canopy	Aromatic	2.91E+06	3.16E+08	7.43E+03	2.42E+03	2.58E+03
 Winter_Mellissa_3	Lower_canopy_Winter	Aromatic_Winter	M._officinalis	Winter	M._officinalis_Winter	Lower_canopy	Aromatic	2.05E+06	1.49E+08	3.12E+03	3.14E+03	1.83E+03
 Winter_Mellissa_5	Lower_canopy_Winter	Aromatic_Winter	M._officinalis	Winter	M._officinalis_Winter	Lower_canopy	Aromatic	1.17E+06	1.98E+08	5.79E+03	7.50E+03	1.88E+03

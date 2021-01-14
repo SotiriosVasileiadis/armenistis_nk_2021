@@ -1,140 +1,3 @@
-$`Shannon Shapiro`
-
-	Shapiro-Wilk normality test
-
-data:  my_setup[, myalphaindex]
-W = 0.93755, p-value = 0.01308
-
-
-$`Shannon Levene`
-Levene's Test for Homogeneity of Variance (center = median)
-      Df F value Pr(>F)
-group 15  0.4836 0.9317
-      32               
-
-$`Shannon ANOVA`
-$statistics
-    MSerror Df     Mean       CV      MSD
-  0.1586297 32 1.649762 24.14188 1.205858
-
-$parameters
-   test     name.t ntr StudentizedRange alpha
-  Tukey planttreat  16         5.244024  0.05
-
-$means
-                        Shannon       std r       Min      Max       Q25       Q50      Q75
-A._unedo_Summer       1.4572735 0.5052263 3 0.8883537 1.853543 1.2591390 1.6299243 1.741733
-A._unedo_Winter       1.6967031 0.5512042 3 1.1680347 2.267971 1.4110691 1.6541035 1.961037
-C._incanus_Summer     1.1594871 0.2706358 3 0.8482307 1.339267 1.0695971 1.2909635 1.315115
-C._incanus_Winter     1.8031518 0.5332178 3 1.1957452 2.194114 1.6076705 2.0195959 2.106855
-L._stoechas_Summer    1.7679665 0.2482750 3 1.4835564 1.941376 1.6812620 1.8789675 1.910172
-L._stoechas_Winter    2.1038718 0.1986670 3 1.9695963 2.332088 1.9897639 2.0099315 2.171010
-M._communis_Summer    1.9123131 0.3314860 3 1.5296315 2.110661 1.8131389 2.0966464 2.103654
-M._communis_Winter    2.0407511 0.3339091 3 1.6560282 2.255168 1.9335425 2.2110568 2.233113
-M._officinalis_Summer 1.0890008 0.4419033 3 0.6496877 1.533450 0.8667764 1.0838650 1.308657
-M._officinalis_Winter 1.9868007 0.1505735 3 1.8862043 2.159910 1.9002459 1.9142875 2.037099
-P._latifolia_Summer   0.6513984 0.3139429 3 0.3039093 0.914578 0.5198086 0.7357079 0.825143
-P._latifolia_Winter   1.7167264 0.7048328 3 0.9493324 2.335198 1.4074907 1.8656490 2.100423
-P._lentiscus_Summer   1.8847950 0.2158128 3 1.6433543 2.058947 1.7977190 1.9520838 2.005515
-P._lentiscus_Winter   1.8147319 0.0748868 3 1.7409791 1.890703 1.7767461 1.8125132 1.851608
-Q._coccifera_Summer   1.5977296 0.4085792 3 1.2230844 2.033382 1.3799034 1.5367225 1.785052
-Q._coccifera_Winter   1.7134853 0.5162588 3 1.2123139 2.243613 1.4484216 1.6845293 1.964071
-
-$comparison
-NULL
-
-$groups
-                        Shannon groups
-L._stoechas_Winter    2.1038718      a
-M._communis_Winter    2.0407511      a
-M._officinalis_Winter 1.9868007      a
-M._communis_Summer    1.9123131      a
-P._lentiscus_Summer   1.8847950      a
-P._lentiscus_Winter   1.8147319     ab
-C._incanus_Winter     1.8031518     ab
-L._stoechas_Summer    1.7679665     ab
-P._latifolia_Winter   1.7167264     ab
-Q._coccifera_Winter   1.7134853     ab
-A._unedo_Winter       1.6967031     ab
-Q._coccifera_Summer   1.5977296     ab
-A._unedo_Summer       1.4572735     ab
-C._incanus_Summer     1.1594871     ab
-M._officinalis_Summer 1.0890008     ab
-P._latifolia_Summer   0.6513984      b
-
-attr(,"class")
-[1] "group"
-
-$`Shannon Kruskal`
-$statistics
-     Chisq    p.chisq
-  23.12925 0.08143391
-
-$parameters
-            test p.ajusted              name.t ntr alpha
-  Kruskal-Wallis       fdr my_setup$planttreat  16  0.05
-
-$means
-                      my_setup...myalphaindex.      rank       std r       Min      Max       Q25
-A._unedo_Summer                      1.4572735 16.666667 0.5052263 3 0.8883537 1.853543 1.2591390
-A._unedo_Winter                      1.6967031 25.333333 0.5512042 3 1.1680347 2.267971 1.4110691
-C._incanus_Summer                    1.1594871 10.333333 0.2706358 3 0.8482307 1.339267 1.0695971
-C._incanus_Winter                    1.8031518 29.333333 0.5332178 3 1.1957452 2.194114 1.6076705
-L._stoechas_Summer                   1.7679665 25.000000 0.2482750 3 1.4835564 1.941376 1.6812620
-L._stoechas_Winter                   2.1038718 38.666667 0.1986670 3 1.9695963 2.332088 1.9897639
-M._communis_Summer                   1.9123131 31.666667 0.3314860 3 1.5296315 2.110661 1.8131389
-M._communis_Winter                   2.0407511 36.666667 0.3339091 3 1.6560282 2.255168 1.9335425
-M._officinalis_Summer                1.0890008  9.000000 0.4419033 3 0.6496877 1.533450 0.8667764
-M._officinalis_Winter                1.9868007 33.666667 0.1505735 3 1.8862043 2.159910 1.9002459
-P._latifolia_Summer                  0.6513984  3.333333 0.3139429 3 0.3039093 0.914578 0.5198086
-P._latifolia_Winter                  1.7167264 27.333333 0.7048328 3 0.9493324 2.335198 1.4074907
-P._lentiscus_Summer                  1.8847950 30.333333 0.2158128 3 1.6433543 2.058947 1.7977190
-P._lentiscus_Winter                  1.8147319 26.333333 0.0748868 3 1.7409791 1.890703 1.7767461
-Q._coccifera_Summer                  1.5977296 22.333333 0.4085792 3 1.2230844 2.033382 1.3799034
-Q._coccifera_Winter                  1.7134853 26.000000 0.5162588 3 1.2123139 2.243613 1.4484216
-                            Q50      Q75
-A._unedo_Summer       1.6299243 1.741733
-A._unedo_Winter       1.6541035 1.961037
-C._incanus_Summer     1.2909635 1.315115
-C._incanus_Winter     2.0195959 2.106855
-L._stoechas_Summer    1.8789675 1.910172
-L._stoechas_Winter    2.0099315 2.171010
-M._communis_Summer    2.0966464 2.103654
-M._communis_Winter    2.2110568 2.233113
-M._officinalis_Summer 1.0838650 1.308657
-M._officinalis_Winter 1.9142875 2.037099
-P._latifolia_Summer   0.7357079 0.825143
-P._latifolia_Winter   1.8656490 2.100423
-P._lentiscus_Summer   1.9520838 2.005515
-P._lentiscus_Winter   1.8125132 1.851608
-Q._coccifera_Summer   1.5367225 1.785052
-Q._coccifera_Winter   1.6845293 1.964071
-
-$comparison
-NULL
-
-$groups
-                      my_setup[, myalphaindex] groups
-L._stoechas_Winter                   38.666667      a
-M._communis_Winter                   36.666667      a
-M._officinalis_Winter                33.666667      a
-M._communis_Summer                   31.666667      a
-P._lentiscus_Summer                  30.333333      a
-C._incanus_Winter                    29.333333      a
-P._latifolia_Winter                  27.333333      a
-P._lentiscus_Winter                  26.333333      a
-Q._coccifera_Winter                  26.000000      a
-A._unedo_Winter                      25.333333      a
-L._stoechas_Summer                   25.000000      a
-Q._coccifera_Summer                  22.333333      a
-A._unedo_Summer                      16.666667      a
-C._incanus_Summer                    10.333333      a
-M._officinalis_Summer                 9.000000      a
-P._latifolia_Summer                   3.333333      a
-
-attr(,"class")
-[1] "group"
-
 $`Shannon Student's t tests`
 $`Shannon Student's t tests`$`t.test A._unedo`
 
@@ -249,139 +112,196 @@ mean of x mean of y
 
 
 
-$`Simpson Shapiro`
+$`Shannon Shapiro Summer`
 
 	Shapiro-Wilk normality test
 
-data:  my_setup[, myalphaindex]
-W = 0.83491, p-value = 8.851e-06
+data:  my_setup[my_setup$season == myseason, myalphaindex]
+W = 0.94203, p-value = 0.181
 
 
-$`Simpson Levene`
+$`Shannon Levene Summer`
 Levene's Test for Homogeneity of Variance (center = median)
       Df F value Pr(>F)
-group 15  0.5676 0.8777
-      32               
+group  7  0.2087 0.9784
+      16               
 
-$`Simpson ANOVA`
+$`Shannon ANOVA Summer`
 $statistics
-     MSerror Df      Mean       CV       MSD
-  0.01614874 32 0.7114512 17.86176 0.3847453
+    MSerror Df     Mean       CV      MSD
+  0.1259214 16 1.439996 24.64272 1.003114
 
 $parameters
-   test     name.t ntr StudentizedRange alpha
-  Tukey planttreat  16         5.244024  0.05
+   test name.t ntr StudentizedRange alpha
+  Tukey  plant   8          4.89622  0.05
 
 $means
-                        Simpson        std r       Min       Max       Q25       Q50       Q75
-A._unedo_Summer       0.6342200 0.16854175 3 0.4466759 0.7730112 0.5648244 0.6829729 0.7279921
-A._unedo_Winter       0.7292991 0.09991240 3 0.6351607 0.8341260 0.6768856 0.7186105 0.7763683
-C._incanus_Summer     0.5877441 0.07190576 3 0.5094676 0.6508621 0.5561850 0.6029025 0.6268823
-C._incanus_Winter     0.7586205 0.13697631 3 0.6044083 0.8661641 0.7048488 0.8052893 0.8357267
-L._stoechas_Summer    0.7794344 0.07138846 3 0.6972656 0.8262227 0.7560402 0.8148148 0.8205187
-L._stoechas_Winter    0.8432582 0.04776904 3 0.7957235 0.8912582 0.8192582 0.8427929 0.8670255
-M._communis_Summer    0.8106992 0.06952023 3 0.7307303 0.8567493 0.7876742 0.8446181 0.8506837
-M._communis_Winter    0.8216318 0.07380452 3 0.7364249 0.8656286 0.7996334 0.8628420 0.8642353
-M._officinalis_Summer 0.5419027 0.15352632 3 0.3677686 0.6577503 0.4839788 0.6001890 0.6289697
-M._officinalis_Winter 0.8101032 0.03960829 3 0.7734536 0.8521223 0.7890937 0.8047337 0.8284280
-P._latifolia_Summer   0.2983077 0.20046243 3 0.1163245 0.5131814 0.1908708 0.2654171 0.3892993
-P._latifolia_Winter   0.6884800 0.29384700 3 0.3512018 0.8891912 0.5881244 0.8250470 0.8571191
-P._lentiscus_Summer   0.7884595 0.06297754 3 0.7266436 0.8525377 0.7564205 0.7861973 0.8193675
-P._lentiscus_Winter   0.7903740 0.04709655 3 0.7380566 0.8293878 0.7708671 0.8036777 0.8165327
-Q._coccifera_Summer   0.7358041 0.10005237 3 0.6363114 0.8364069 0.6855026 0.7346939 0.7855504
-Q._coccifera_Winter   0.7648811 0.10263809 3 0.6718750 0.8750000 0.7098216 0.7477683 0.8113841
+                 Shannon       std r       Min      Max       Q25       Q50      Q75
+A._unedo       1.4572735 0.5052263 3 0.8883537 1.853543 1.2591390 1.6299243 1.741733
+C._incanus     1.1594871 0.2706358 3 0.8482307 1.339267 1.0695971 1.2909635 1.315115
+L._stoechas    1.7679665 0.2482750 3 1.4835564 1.941376 1.6812620 1.8789675 1.910172
+M._communis    1.9123131 0.3314860 3 1.5296315 2.110661 1.8131389 2.0966464 2.103654
+M._officinalis 1.0890008 0.4419033 3 0.6496877 1.533450 0.8667764 1.0838650 1.308657
+P._latifolia   0.6513984 0.3139429 3 0.3039093 0.914578 0.5198086 0.7357079 0.825143
+P._lentiscus   1.8847950 0.2158128 3 1.6433543 2.058947 1.7977190 1.9520838 2.005515
+Q._coccifera   1.5977296 0.4085792 3 1.2230844 2.033382 1.3799034 1.5367225 1.785052
 
 $comparison
 NULL
 
 $groups
-                        Simpson groups
-L._stoechas_Winter    0.8432582      a
-M._communis_Winter    0.8216318      a
-M._communis_Summer    0.8106992      a
-M._officinalis_Winter 0.8101032      a
-P._lentiscus_Winter   0.7903740      a
-P._lentiscus_Summer   0.7884595      a
-L._stoechas_Summer    0.7794344      a
-Q._coccifera_Winter   0.7648811      a
-C._incanus_Winter     0.7586205      a
-Q._coccifera_Summer   0.7358041      a
-A._unedo_Winter       0.7292991      a
-P._latifolia_Winter   0.6884800      a
-A._unedo_Summer       0.6342200     ab
-C._incanus_Summer     0.5877441     ab
-M._officinalis_Summer 0.5419027     ab
-P._latifolia_Summer   0.2983077      b
+                 Shannon groups
+M._communis    1.9123131      a
+P._lentiscus   1.8847950      a
+L._stoechas    1.7679665      a
+Q._coccifera   1.5977296     ab
+A._unedo       1.4572735     ab
+C._incanus     1.1594871     ab
+M._officinalis 1.0890008     ab
+P._latifolia   0.6513984      b
 
 attr(,"class")
 [1] "group"
 
-$`Simpson Kruskal`
+$`Shannon Kruskal Summer`
 $statistics
-     Chisq   p.chisq
-  24.14286 0.0627069
+     Chisq    p.chisq
+  14.86667 0.03774703
 
 $parameters
-            test p.ajusted              name.t ntr alpha
-  Kruskal-Wallis       fdr my_setup$planttreat  16  0.05
+            test p.ajusted                                        name.t ntr alpha
+  Kruskal-Wallis       fdr my_setup[my_setup$season == myseason, ]$plant   8  0.05
 
 $means
-                      my_setup...myalphaindex.      rank        std r       Min       Max
-A._unedo_Summer                      0.6342200 15.333333 0.16854175 3 0.4466759 0.7730112
-A._unedo_Winter                      0.7292991 21.666667 0.09991240 3 0.6351607 0.8341260
-C._incanus_Summer                    0.5877441  9.333333 0.07190576 3 0.5094676 0.6508621
-C._incanus_Winter                    0.7586205 28.666667 0.13697631 3 0.6044083 0.8661641
-L._stoechas_Summer                   0.7794344 27.666667 0.07138846 3 0.6972656 0.8262227
-L._stoechas_Winter                   0.8432582 38.000000 0.04776904 3 0.7957235 0.8912582
-M._communis_Summer                   0.8106992 33.666667 0.06952023 3 0.7307303 0.8567493
-M._communis_Winter                   0.8216318 36.333333 0.07380452 3 0.7364249 0.8656286
-M._officinalis_Summer                0.5419027  8.666667 0.15352632 3 0.3677686 0.6577503
-M._officinalis_Winter                0.8101032 32.000000 0.03960829 3 0.7734536 0.8521223
-P._latifolia_Summer                  0.2983077  3.333333 0.20046243 3 0.1163245 0.5131814
-P._latifolia_Winter                  0.6884800 27.666667 0.29384700 3 0.3512018 0.8891912
-P._lentiscus_Summer                  0.7884595 29.000000 0.06297754 3 0.7266436 0.8525377
-P._lentiscus_Winter                  0.7903740 29.000000 0.04709655 3 0.7380566 0.8293878
-Q._coccifera_Summer                  0.7358041 23.333333 0.10005237 3 0.6363114 0.8364069
-Q._coccifera_Winter                  0.7648811 28.333333 0.10263809 3 0.6718750 0.8750000
-                            Q25       Q50       Q75
-A._unedo_Summer       0.5648244 0.6829729 0.7279921
-A._unedo_Winter       0.6768856 0.7186105 0.7763683
-C._incanus_Summer     0.5561850 0.6029025 0.6268823
-C._incanus_Winter     0.7048488 0.8052893 0.8357267
-L._stoechas_Summer    0.7560402 0.8148148 0.8205187
-L._stoechas_Winter    0.8192582 0.8427929 0.8670255
-M._communis_Summer    0.7876742 0.8446181 0.8506837
-M._communis_Winter    0.7996334 0.8628420 0.8642353
-M._officinalis_Summer 0.4839788 0.6001890 0.6289697
-M._officinalis_Winter 0.7890937 0.8047337 0.8284280
-P._latifolia_Summer   0.1908708 0.2654171 0.3892993
-P._latifolia_Winter   0.5881244 0.8250470 0.8571191
-P._lentiscus_Summer   0.7564205 0.7861973 0.8193675
-P._lentiscus_Winter   0.7708671 0.8036777 0.8165327
-Q._coccifera_Summer   0.6855026 0.7346939 0.7855504
-Q._coccifera_Winter   0.7098216 0.7477683 0.8113841
+               my_setup.my_setup.season....myseason..myalphaindex.      rank       std r       Min
+A._unedo                                                 1.4572735 12.333333 0.5052263 3 0.8883537
+C._incanus                                               1.1594871  7.666667 0.2706358 3 0.8482307
+L._stoechas                                              1.7679665 16.000000 0.2482750 3 1.4835564
+M._communis                                              1.9123131 19.666667 0.3314860 3 1.5296315
+M._officinalis                                           1.0890008  7.333333 0.4419033 3 0.6496877
+P._latifolia                                             0.6513984  3.333333 0.3139429 3 0.3039093
+P._lentiscus                                             1.8847950 19.333333 0.2158128 3 1.6433543
+Q._coccifera                                             1.5977296 14.333333 0.4085792 3 1.2230844
+                    Max       Q25       Q50      Q75
+A._unedo       1.853543 1.2591390 1.6299243 1.741733
+C._incanus     1.339267 1.0695971 1.2909635 1.315115
+L._stoechas    1.941376 1.6812620 1.8789675 1.910172
+M._communis    2.110661 1.8131389 2.0966464 2.103654
+M._officinalis 1.533450 0.8667764 1.0838650 1.308657
+P._latifolia   0.914578 0.5198086 0.7357079 0.825143
+P._lentiscus   2.058947 1.7977190 1.9520838 2.005515
+Q._coccifera   2.033382 1.3799034 1.5367225 1.785052
 
 $comparison
 NULL
 
 $groups
-                      my_setup[, myalphaindex] groups
-L._stoechas_Winter                   38.000000      a
-M._communis_Winter                   36.333333      a
-M._communis_Summer                   33.666667      a
-M._officinalis_Winter                32.000000      a
-P._lentiscus_Summer                  29.000000      a
-P._lentiscus_Winter                  29.000000      a
-C._incanus_Winter                    28.666667      a
-Q._coccifera_Winter                  28.333333      a
-L._stoechas_Summer                   27.666667      a
-P._latifolia_Winter                  27.666667      a
-Q._coccifera_Summer                  23.333333      a
-A._unedo_Winter                      21.666667      a
-A._unedo_Summer                      15.333333      a
-C._incanus_Summer                     9.333333      a
-M._officinalis_Summer                 8.666667      a
-P._latifolia_Summer                   3.333333      a
+               my_setup[my_setup$season == myseason, myalphaindex] groups
+M._communis                                              19.666667      a
+P._lentiscus                                             19.333333      a
+L._stoechas                                              16.000000     ab
+Q._coccifera                                             14.333333    abc
+A._unedo                                                 12.333333    abc
+C._incanus                                                7.666667     bc
+M._officinalis                                            7.333333     bc
+P._latifolia                                              3.333333      c
+
+attr(,"class")
+[1] "group"
+
+$`Shannon Shapiro Winter`
+
+	Shapiro-Wilk normality test
+
+data:  my_setup[my_setup$season == myseason, myalphaindex]
+W = 0.90162, p-value = 0.0233
+
+
+$`Shannon Levene Winter`
+Levene's Test for Homogeneity of Variance (center = median)
+      Df F value Pr(>F)
+group  7  0.7346 0.6464
+      16               
+
+$`Shannon ANOVA Winter`
+$statistics
+   MSerror Df     Mean       CV      MSD
+  0.191338 16 1.859528 23.52328 1.236519
+
+$parameters
+   test name.t ntr StudentizedRange alpha
+  Tukey  plant   8          4.89622  0.05
+
+$means
+                Shannon       std r       Min      Max      Q25      Q50      Q75
+A._unedo       1.696703 0.5512042 3 1.1680347 2.267971 1.411069 1.654104 1.961037
+C._incanus     1.803152 0.5332178 3 1.1957452 2.194114 1.607671 2.019596 2.106855
+L._stoechas    2.103872 0.1986670 3 1.9695963 2.332088 1.989764 2.009931 2.171010
+M._communis    2.040751 0.3339091 3 1.6560282 2.255168 1.933542 2.211057 2.233113
+M._officinalis 1.986801 0.1505735 3 1.8862043 2.159910 1.900246 1.914288 2.037099
+P._latifolia   1.716726 0.7048328 3 0.9493324 2.335198 1.407491 1.865649 2.100423
+P._lentiscus   1.814732 0.0748868 3 1.7409791 1.890703 1.776746 1.812513 1.851608
+Q._coccifera   1.713485 0.5162588 3 1.2123139 2.243613 1.448422 1.684529 1.964071
+
+$comparison
+NULL
+
+$groups
+                Shannon groups
+L._stoechas    2.103872      a
+M._communis    2.040751      a
+M._officinalis 1.986801      a
+P._lentiscus   1.814732      a
+C._incanus     1.803152      a
+P._latifolia   1.716726      a
+Q._coccifera   1.713485      a
+A._unedo       1.696703      a
+
+attr(,"class")
+[1] "group"
+
+$`Shannon Kruskal Winter`
+$statistics
+     Chisq   p.chisq
+  3.253333 0.8606199
+
+$parameters
+            test p.ajusted                                        name.t ntr alpha
+  Kruskal-Wallis       fdr my_setup[my_setup$season == myseason, ]$plant   8  0.05
+
+$means
+               my_setup.my_setup.season....myseason..myalphaindex.      rank       std r       Min
+A._unedo                                                  1.696703  9.666667 0.5512042 3 1.1680347
+C._incanus                                                1.803152 12.333333 0.5332178 3 1.1957452
+L._stoechas                                               2.103872 17.333333 0.1986670 3 1.9695963
+M._communis                                               2.040751 15.333333 0.3339091 3 1.6560282
+M._officinalis                                            1.986801 13.666667 0.1505735 3 1.8862043
+P._latifolia                                              1.716726 11.666667 0.7048328 3 0.9493324
+P._lentiscus                                              1.814732  9.666667 0.0748868 3 1.7409791
+Q._coccifera                                              1.713485 10.333333 0.5162588 3 1.2123139
+                    Max      Q25      Q50      Q75
+A._unedo       2.267971 1.411069 1.654104 1.961037
+C._incanus     2.194114 1.607671 2.019596 2.106855
+L._stoechas    2.332088 1.989764 2.009931 2.171010
+M._communis    2.255168 1.933542 2.211057 2.233113
+M._officinalis 2.159910 1.900246 1.914288 2.037099
+P._latifolia   2.335198 1.407491 1.865649 2.100423
+P._lentiscus   1.890703 1.776746 1.812513 1.851608
+Q._coccifera   2.243613 1.448422 1.684529 1.964071
+
+$comparison
+NULL
+
+$groups
+               my_setup[my_setup$season == myseason, myalphaindex] groups
+L._stoechas                                              17.333333      a
+M._communis                                              15.333333      a
+M._officinalis                                           13.666667      a
+C._incanus                                               12.333333      a
+P._latifolia                                             11.666667      a
+Q._coccifera                                             10.333333      a
+A._unedo                                                  9.666667      a
+P._lentiscus                                              9.666667      a
 
 attr(,"class")
 [1] "group"
@@ -500,139 +420,196 @@ mean of x mean of y
 
 
 
-$`Fishers_a Shapiro`
+$`Simpson Shapiro Summer`
 
 	Shapiro-Wilk normality test
 
-data:  my_setup[, myalphaindex]
-W = 0.92145, p-value = 0.003346
+data:  my_setup[my_setup$season == myseason, myalphaindex]
+W = 0.88672, p-value = 0.01138
 
 
-$`Fishers_a Levene`
+$`Simpson Levene Summer`
 Levene's Test for Homogeneity of Variance (center = median)
       Df F value Pr(>F)
-group 15  0.7384 0.7294
-      32               
+group  7  0.5128 0.8119
+      16               
 
-$`Fishers_a ANOVA`
+$`Simpson ANOVA Summer`
 $statistics
-   MSerror Df     Mean       CV      MSD
-  2.604683 32 3.271408 49.33359 4.886315
+     MSerror Df      Mean       CV       MSD
+  0.01515479 16 0.6470715 19.02491 0.3479968
 
 $parameters
-   test     name.t ntr StudentizedRange alpha
-  Tukey planttreat  16         5.244024  0.05
+   test name.t ntr StudentizedRange alpha
+  Tukey  plant   8          4.89622  0.05
 
 $means
-                      Fishers_a       std r       Min      Max       Q25      Q50      Q75
-A._unedo_Summer        2.986490 1.6051508 3 1.2470775 4.410581 2.2744438 3.301810 3.856196
-A._unedo_Winter        4.304583 3.4354606 3 1.3992876 8.096426 2.4086613 3.418035 5.757230
-C._incanus_Summer      1.506604 0.2903480 3 1.2894310 1.836389 1.3417111 1.393991 1.615190
-C._incanus_Winter      3.375894 1.5356503 3 2.4681399 5.148941 2.4893705 2.510601 3.829771
-L._stoechas_Summer     3.985206 1.6857620 3 2.1799757 5.518417 3.2186013 4.257227 4.887822
-L._stoechas_Winter     3.300162 0.2737229 3 2.9905086 3.509855 3.1953159 3.400123 3.454989
-M._communis_Summer     3.341693 1.3867082 3 1.7915356 4.464218 2.7804301 3.769325 4.116771
-M._communis_Winter     3.445992 0.5185496 3 2.9168053 3.953206 3.1923858 3.467966 3.710586
-M._officinalis_Summer  1.881141 1.7231918 3 0.7286675 3.862100 0.8906617 1.052656 2.457378
-M._officinalis_Winter  4.340029 1.4596390 3 3.1014324 5.949254 3.5354168 3.969401 4.959328
-P._latifolia_Summer    2.171961 0.6738124 3 1.7051975 2.944437 1.7857234 1.866249 2.405343
-P._latifolia_Winter    3.190342 0.6820687 3 2.4619346 3.813938 2.8785442 3.295154 3.554546
-P._lentiscus_Summer    3.711657 0.4724322 3 3.2981941 4.226574 3.4541982 3.610202 3.918388
-P._lentiscus_Winter    3.376790 0.5616079 3 2.8950310 3.993615 3.0683783 3.241726 3.617670
-Q._coccifera_Summer    3.273688 1.4289519 3 1.6293382 4.214137 2.8034633 3.977588 4.095863
-Q._coccifera_Winter    4.150289 3.3384509 3 1.7118462 7.955193 2.2478374 2.783829 5.369511
+                 Simpson        std r       Min       Max       Q25       Q50       Q75
+A._unedo       0.6342200 0.16854175 3 0.4466759 0.7730112 0.5648244 0.6829729 0.7279921
+C._incanus     0.5877441 0.07190576 3 0.5094676 0.6508621 0.5561850 0.6029025 0.6268823
+L._stoechas    0.7794344 0.07138846 3 0.6972656 0.8262227 0.7560402 0.8148148 0.8205187
+M._communis    0.8106992 0.06952023 3 0.7307303 0.8567493 0.7876742 0.8446181 0.8506837
+M._officinalis 0.5419027 0.15352632 3 0.3677686 0.6577503 0.4839788 0.6001890 0.6289697
+P._latifolia   0.2983077 0.20046243 3 0.1163245 0.5131814 0.1908708 0.2654171 0.3892993
+P._lentiscus   0.7884595 0.06297754 3 0.7266436 0.8525377 0.7564205 0.7861973 0.8193675
+Q._coccifera   0.7358041 0.10005237 3 0.6363114 0.8364069 0.6855026 0.7346939 0.7855504
 
 $comparison
 NULL
 
 $groups
-                      Fishers_a groups
-M._officinalis_Winter  4.340029      a
-A._unedo_Winter        4.304583      a
-Q._coccifera_Winter    4.150289      a
-L._stoechas_Summer     3.985206      a
-P._lentiscus_Summer    3.711657      a
-M._communis_Winter     3.445992      a
-P._lentiscus_Winter    3.376790      a
-C._incanus_Winter      3.375894      a
-M._communis_Summer     3.341693      a
-L._stoechas_Winter     3.300162      a
-Q._coccifera_Summer    3.273688      a
-P._latifolia_Winter    3.190342      a
-A._unedo_Summer        2.986490      a
-P._latifolia_Summer    2.171961      a
-M._officinalis_Summer  1.881141      a
-C._incanus_Summer      1.506604      a
+                 Simpson groups
+M._communis    0.8106992      a
+P._lentiscus   0.7884595      a
+L._stoechas    0.7794344      a
+Q._coccifera   0.7358041      a
+A._unedo       0.6342200     ab
+C._incanus     0.5877441     ab
+M._officinalis 0.5419027     ab
+P._latifolia   0.2983077      b
 
 attr(,"class")
 [1] "group"
 
-$`Fishers_a Kruskal`
+$`Simpson Kruskal Summer`
 $statistics
-     Chisq   p.chisq
-  13.35714 0.5747333
+     Chisq    p.chisq
+  16.37333 0.02191602
 
 $parameters
-            test p.ajusted              name.t ntr alpha
-  Kruskal-Wallis       fdr my_setup$planttreat  16  0.05
+            test p.ajusted                                        name.t ntr alpha
+  Kruskal-Wallis       fdr my_setup[my_setup$season == myseason, ]$plant   8  0.05
 
 $means
-                      my_setup...myalphaindex.      rank       std r       Min      Max       Q25
-A._unedo_Summer                       2.986490 23.666667 1.6051508 3 1.2470775 4.410581 2.2744438
-A._unedo_Winter                       4.304583 27.333333 3.4354606 3 1.3992876 8.096426 2.4086613
-C._incanus_Summer                     1.506604  6.666667 0.2903480 3 1.2894310 1.836389 1.3417111
-C._incanus_Winter                     3.375894 25.000000 1.5356503 3 2.4681399 5.148941 2.4893705
-L._stoechas_Summer                    3.985206 33.000000 1.6857620 3 2.1799757 5.518417 3.2186013
-L._stoechas_Winter                    3.300162 26.000000 0.2737229 3 2.9905086 3.509855 3.1953159
-M._communis_Summer                    3.341693 28.333333 1.3867082 3 1.7915356 4.464218 2.7804301
-M._communis_Winter                    3.445992 27.666667 0.5185496 3 2.9168053 3.953206 3.1923858
-M._officinalis_Summer                 1.881141 12.333333 1.7231918 3 0.7286675 3.862100 0.8906617
-M._officinalis_Winter                 4.340029 34.666667 1.4596390 3 3.1014324 5.949254 3.5354168
-P._latifolia_Summer                   2.171961 13.333333 0.6738124 3 1.7051975 2.944437 1.7857234
-P._latifolia_Winter                   3.190342 23.666667 0.6820687 3 2.4619346 3.813938 2.8785442
-P._lentiscus_Summer                   3.711657 32.000000 0.4724322 3 3.2981941 4.226574 3.4541982
-P._lentiscus_Winter                   3.376790 26.333333 0.5616079 3 2.8950310 3.993615 3.0683783
-Q._coccifera_Summer                   3.273688 27.666667 1.4289519 3 1.6293382 4.214137 2.8034633
-Q._coccifera_Winter                   4.150289 24.333333 3.3384509 3 1.7118462 7.955193 2.2478374
-                           Q50      Q75
-A._unedo_Summer       3.301810 3.856196
-A._unedo_Winter       3.418035 5.757230
-C._incanus_Summer     1.393991 1.615190
-C._incanus_Winter     2.510601 3.829771
-L._stoechas_Summer    4.257227 4.887822
-L._stoechas_Winter    3.400123 3.454989
-M._communis_Summer    3.769325 4.116771
-M._communis_Winter    3.467966 3.710586
-M._officinalis_Summer 1.052656 2.457378
-M._officinalis_Winter 3.969401 4.959328
-P._latifolia_Summer   1.866249 2.405343
-P._latifolia_Winter   3.295154 3.554546
-P._lentiscus_Summer   3.610202 3.918388
-P._lentiscus_Winter   3.241726 3.617670
-Q._coccifera_Summer   3.977588 4.095863
-Q._coccifera_Winter   2.783829 5.369511
+               my_setup.my_setup.season....myseason..myalphaindex.      rank        std r       Min
+A._unedo                                                 0.6342200 11.000000 0.16854175 3 0.4466759
+C._incanus                                               0.5877441  7.666667 0.07190576 3 0.5094676
+L._stoechas                                              0.7794344 17.333333 0.07138846 3 0.6972656
+M._communis                                              0.8106992 20.333333 0.06952023 3 0.7307303
+M._officinalis                                           0.5419027  7.000000 0.15352632 3 0.3677686
+P._latifolia                                             0.2983077  3.000000 0.20046243 3 0.1163245
+P._lentiscus                                             0.7884595 18.333333 0.06297754 3 0.7266436
+Q._coccifera                                             0.7358041 15.333333 0.10005237 3 0.6363114
+                     Max       Q25       Q50       Q75
+A._unedo       0.7730112 0.5648244 0.6829729 0.7279921
+C._incanus     0.6508621 0.5561850 0.6029025 0.6268823
+L._stoechas    0.8262227 0.7560402 0.8148148 0.8205187
+M._communis    0.8567493 0.7876742 0.8446181 0.8506837
+M._officinalis 0.6577503 0.4839788 0.6001890 0.6289697
+P._latifolia   0.5131814 0.1908708 0.2654171 0.3892993
+P._lentiscus   0.8525377 0.7564205 0.7861973 0.8193675
+Q._coccifera   0.8364069 0.6855026 0.7346939 0.7855504
 
 $comparison
 NULL
 
 $groups
-                      my_setup[, myalphaindex] groups
-M._officinalis_Winter                34.666667      a
-L._stoechas_Summer                   33.000000      a
-P._lentiscus_Summer                  32.000000      a
-M._communis_Summer                   28.333333      a
-M._communis_Winter                   27.666667      a
-Q._coccifera_Summer                  27.666667      a
-A._unedo_Winter                      27.333333      a
-P._lentiscus_Winter                  26.333333      a
-L._stoechas_Winter                   26.000000      a
-C._incanus_Winter                    25.000000      a
-Q._coccifera_Winter                  24.333333      a
-A._unedo_Summer                      23.666667      a
-P._latifolia_Winter                  23.666667      a
-P._latifolia_Summer                  13.333333      a
-M._officinalis_Summer                12.333333      a
-C._incanus_Summer                     6.666667      a
+               my_setup[my_setup$season == myseason, myalphaindex] groups
+M._communis                                              20.333333      a
+P._lentiscus                                             18.333333      a
+L._stoechas                                              17.333333     ab
+Q._coccifera                                             15.333333    abc
+A._unedo                                                 11.000000   abcd
+C._incanus                                                7.666667    bcd
+M._officinalis                                            7.000000     cd
+P._latifolia                                              3.000000      d
+
+attr(,"class")
+[1] "group"
+
+$`Simpson Shapiro Winter`
+
+	Shapiro-Wilk normality test
+
+data:  my_setup[my_setup$season == myseason, myalphaindex]
+W = 0.79087, p-value = 0.0002097
+
+
+$`Simpson Levene Winter`
+Levene's Test for Homogeneity of Variance (center = median)
+      Df F value Pr(>F)
+group  7  0.6647 0.6986
+      16               
+
+$`Simpson ANOVA Winter`
+$statistics
+     MSerror Df     Mean       CV       MSD
+  0.01714269 16 0.775831 16.87611 0.3701177
+
+$parameters
+   test name.t ntr StudentizedRange alpha
+  Tukey  plant   8          4.89622  0.05
+
+$means
+                 Simpson        std r       Min       Max       Q25       Q50       Q75
+A._unedo       0.7292991 0.09991240 3 0.6351607 0.8341260 0.6768856 0.7186105 0.7763683
+C._incanus     0.7586205 0.13697631 3 0.6044083 0.8661641 0.7048488 0.8052893 0.8357267
+L._stoechas    0.8432582 0.04776904 3 0.7957235 0.8912582 0.8192582 0.8427929 0.8670255
+M._communis    0.8216318 0.07380452 3 0.7364249 0.8656286 0.7996334 0.8628420 0.8642353
+M._officinalis 0.8101032 0.03960829 3 0.7734536 0.8521223 0.7890937 0.8047337 0.8284280
+P._latifolia   0.6884800 0.29384700 3 0.3512018 0.8891912 0.5881244 0.8250470 0.8571191
+P._lentiscus   0.7903740 0.04709655 3 0.7380566 0.8293878 0.7708671 0.8036777 0.8165327
+Q._coccifera   0.7648811 0.10263809 3 0.6718750 0.8750000 0.7098216 0.7477683 0.8113841
+
+$comparison
+NULL
+
+$groups
+                 Simpson groups
+L._stoechas    0.8432582      a
+M._communis    0.8216318      a
+M._officinalis 0.8101032      a
+P._lentiscus   0.7903740      a
+Q._coccifera   0.7648811      a
+C._incanus     0.7586205      a
+A._unedo       0.7292991      a
+P._latifolia   0.6884800      a
+
+attr(,"class")
+[1] "group"
+
+$`Simpson Kruskal Winter`
+$statistics
+     Chisq  p.chisq
+  3.053333 0.880025
+
+$parameters
+            test p.ajusted                                        name.t ntr alpha
+  Kruskal-Wallis       fdr my_setup[my_setup$season == myseason, ]$plant   8  0.05
+
+$means
+               my_setup.my_setup.season....myseason..myalphaindex.     rank        std r       Min
+A._unedo                                                 0.7292991  8.00000 0.09991240 3 0.6351607
+C._incanus                                               0.7586205 12.00000 0.13697631 3 0.6044083
+L._stoechas                                              0.8432582 17.00000 0.04776904 3 0.7957235
+M._communis                                              0.8216318 15.00000 0.07380452 3 0.7364249
+M._officinalis                                           0.8101032 13.00000 0.03960829 3 0.7734536
+P._latifolia                                             0.6884800 12.66667 0.29384700 3 0.3512018
+P._lentiscus                                             0.7903740 11.00000 0.04709655 3 0.7380566
+Q._coccifera                                             0.7648811 11.33333 0.10263809 3 0.6718750
+                     Max       Q25       Q50       Q75
+A._unedo       0.8341260 0.6768856 0.7186105 0.7763683
+C._incanus     0.8661641 0.7048488 0.8052893 0.8357267
+L._stoechas    0.8912582 0.8192582 0.8427929 0.8670255
+M._communis    0.8656286 0.7996334 0.8628420 0.8642353
+M._officinalis 0.8521223 0.7890937 0.8047337 0.8284280
+P._latifolia   0.8891912 0.5881244 0.8250470 0.8571191
+P._lentiscus   0.8293878 0.7708671 0.8036777 0.8165327
+Q._coccifera   0.8750000 0.7098216 0.7477683 0.8113841
+
+$comparison
+NULL
+
+$groups
+               my_setup[my_setup$season == myseason, myalphaindex] groups
+L._stoechas                                               17.00000      a
+M._communis                                               15.00000      a
+M._officinalis                                            13.00000      a
+P._latifolia                                              12.66667      a
+C._incanus                                                12.00000      a
+Q._coccifera                                              11.33333      a
+P._lentiscus                                              11.00000      a
+A._unedo                                                   8.00000      a
 
 attr(,"class")
 [1] "group"
@@ -751,122 +728,196 @@ mean of x mean of y
 
 
 
-$`Richness Shapiro`
+$`Fishers_a Shapiro Summer`
 
 	Shapiro-Wilk normality test
 
-data:  my_setup[, myalphaindex]
-W = 0.96633, p-value = 0.1816
+data:  my_setup[my_setup$season == myseason, myalphaindex]
+W = 0.92564, p-value = 0.07791
 
 
-$`Richness Levene`
+$`Fishers_a Levene Summer`
 Levene's Test for Homogeneity of Variance (center = median)
       Df F value Pr(>F)
-group 15   0.435 0.9553
-      32               
+group  7  0.4335  0.867
+      16               
 
-$`Richness ANOVA`
+$`Fishers_a ANOVA Summer`
 $statistics
-   MSerror Df Mean       CV      MSD
-  11.52083 32 10.5 32.32605 10.27652
+   MSerror Df     Mean      CV      MSD
+  1.639259 16 2.857305 44.8092 3.619296
 
 $parameters
-   test     name.t ntr StudentizedRange alpha
-  Tukey planttreat  16         5.244024  0.05
+   test name.t ntr StudentizedRange alpha
+  Tukey  plant   8          4.89622  0.05
 
 $means
-                       Richness      std r Min Max  Q25 Q50  Q75
-A._unedo_Summer       10.000000 3.605551 3   6  13  8.5  11 12.0
-A._unedo_Winter       11.000000 6.557439 3   4  17  8.0  12 14.5
-C._incanus_Summer      7.333333 1.527525 3   6   9  6.5   7  8.0
-C._incanus_Winter     14.666667 1.527525 3  13  16 14.0  15 15.5
-L._stoechas_Summer     7.666667 1.527525 3   6   9  7.0   8  8.5
-L._stoechas_Winter    13.333333 2.516611 3  11  16 12.0  13 14.5
-M._communis_Summer    10.000000 1.732051 3   8  11  9.5  11 11.0
-M._communis_Winter    12.333333 2.081666 3  10  14 11.5  13 13.5
-M._officinalis_Summer  6.666667 5.507571 3   3  13  3.5   4  8.5
-M._officinalis_Winter 12.000000 1.732051 3  10  13 11.5  13 13.0
-P._latifolia_Summer   12.333333 2.081666 3  10  14 11.5  13 13.5
-P._latifolia_Winter   12.666667 4.163332 3   8  16 11.0  14 15.0
-P._lentiscus_Summer   11.333333 4.163332 3   8  16  9.0  10 13.0
-P._lentiscus_Winter   10.000000 3.464102 3   8  14  8.0   8 11.0
-Q._coccifera_Summer    7.666667 2.081666 3   6  10  6.5   7  8.5
-Q._coccifera_Winter    9.000000 4.358899 3   4  12  7.5  11 11.5
+               Fishers_a       std r       Min      Max       Q25      Q50      Q75
+A._unedo        2.986490 1.6051508 3 1.2470775 4.410581 2.2744438 3.301810 3.856196
+C._incanus      1.506604 0.2903480 3 1.2894310 1.836389 1.3417111 1.393991 1.615190
+L._stoechas     3.985206 1.6857620 3 2.1799757 5.518417 3.2186013 4.257227 4.887822
+M._communis     3.341693 1.3867082 3 1.7915356 4.464218 2.7804301 3.769325 4.116771
+M._officinalis  1.881141 1.7231918 3 0.7286675 3.862100 0.8906617 1.052656 2.457378
+P._latifolia    2.171961 0.6738124 3 1.7051975 2.944437 1.7857234 1.866249 2.405343
+P._lentiscus    3.711657 0.4724322 3 3.2981941 4.226574 3.4541982 3.610202 3.918388
+Q._coccifera    3.273688 1.4289519 3 1.6293382 4.214137 2.8034633 3.977588 4.095863
 
 $comparison
 NULL
 
 $groups
-                       Richness groups
-C._incanus_Winter     14.666667      a
-L._stoechas_Winter    13.333333      a
-P._latifolia_Winter   12.666667      a
-M._communis_Winter    12.333333      a
-P._latifolia_Summer   12.333333      a
-M._officinalis_Winter 12.000000      a
-P._lentiscus_Summer   11.333333      a
-A._unedo_Winter       11.000000      a
-A._unedo_Summer       10.000000      a
-M._communis_Summer    10.000000      a
-P._lentiscus_Winter   10.000000      a
-Q._coccifera_Winter    9.000000      a
-L._stoechas_Summer     7.666667      a
-Q._coccifera_Summer    7.666667      a
-C._incanus_Summer      7.333333      a
-M._officinalis_Summer  6.666667      a
+               Fishers_a groups
+L._stoechas     3.985206      a
+P._lentiscus    3.711657      a
+M._communis     3.341693      a
+Q._coccifera    3.273688      a
+A._unedo        2.986490      a
+P._latifolia    2.171961      a
+M._officinalis  1.881141      a
+C._incanus      1.506604      a
 
 attr(,"class")
 [1] "group"
 
-$`Richness Kruskal`
+$`Fishers_a Kruskal Summer`
 $statistics
      Chisq   p.chisq
-  19.56013 0.1894637
+  8.893333 0.2604053
 
 $parameters
-            test p.ajusted              name.t ntr alpha
-  Kruskal-Wallis       fdr my_setup$planttreat  16  0.05
+            test p.ajusted                                        name.t ntr alpha
+  Kruskal-Wallis       fdr my_setup[my_setup$season == myseason, ]$plant   8  0.05
 
 $means
-                      my_setup...myalphaindex.     rank      std r Min Max  Q25 Q50  Q75
-A._unedo_Summer                      10.000000 22.33333 3.605551 3   6  13  8.5  11 12.0
-A._unedo_Winter                      11.000000 26.83333 6.557439 3   4  17  8.0  12 14.5
-C._incanus_Summer                     7.333333 11.16667 1.527525 3   6   9  6.5   7  8.0
-C._incanus_Winter                    14.666667 41.00000 1.527525 3  13  16 14.0  15 15.5
-L._stoechas_Summer                    7.666667 12.50000 1.527525 3   6   9  7.0   8  8.5
-L._stoechas_Winter                   13.333333 35.33333 2.516611 3  11  16 12.0  13 14.5
-M._communis_Summer                   10.000000 21.83333 1.732051 3   8  11  9.5  11 11.0
-M._communis_Winter                   12.333333 32.00000 2.081666 3  10  14 11.5  13 13.5
-M._officinalis_Summer                 6.666667 12.83333 5.507571 3   3  13  3.5   4  8.5
-M._officinalis_Winter                12.000000 30.00000 1.732051 3  10  13 11.5  13 13.0
-P._latifolia_Summer                  12.333333 32.00000 2.081666 3  10  14 11.5  13 13.5
-P._latifolia_Winter                  12.666667 33.16667 4.163332 3   8  16 11.0  14 15.0
-P._lentiscus_Summer                  11.333333 26.66667 4.163332 3   8  16  9.0  10 13.0
-P._lentiscus_Winter                  10.000000 22.50000 3.464102 3   8  14  8.0   8 11.0
-Q._coccifera_Summer                   7.666667 12.33333 2.081666 3   6  10  6.5   7  8.5
-Q._coccifera_Winter                   9.000000 19.50000 4.358899 3   4  12  7.5  11 11.5
+               my_setup.my_setup.season....myseason..myalphaindex.      rank       std r       Min
+A._unedo                                                  2.986490 13.000000 1.6051508 3 1.2470775
+C._incanus                                                1.506604  6.000000 0.2903480 3 1.2894310
+L._stoechas                                               3.985206 18.666667 1.6857620 3 2.1799757
+M._communis                                               3.341693 15.666667 1.3867082 3 1.7915356
+M._officinalis                                            1.881141  6.666667 1.7231918 3 0.7286675
+P._latifolia                                              2.171961  9.666667 0.6738124 3 1.7051975
+P._lentiscus                                              3.711657 16.000000 0.4724322 3 3.2981941
+Q._coccifera                                              3.273688 14.333333 1.4289519 3 1.6293382
+                    Max       Q25      Q50      Q75
+A._unedo       4.410581 2.2744438 3.301810 3.856196
+C._incanus     1.836389 1.3417111 1.393991 1.615190
+L._stoechas    5.518417 3.2186013 4.257227 4.887822
+M._communis    4.464218 2.7804301 3.769325 4.116771
+M._officinalis 3.862100 0.8906617 1.052656 2.457378
+P._latifolia   2.944437 1.7857234 1.866249 2.405343
+P._lentiscus   4.226574 3.4541982 3.610202 3.918388
+Q._coccifera   4.214137 2.8034633 3.977588 4.095863
 
 $comparison
 NULL
 
 $groups
-                      my_setup[, myalphaindex] groups
-C._incanus_Winter                     41.00000      a
-L._stoechas_Winter                    35.33333      a
-P._latifolia_Winter                   33.16667      a
-M._communis_Winter                    32.00000      a
-P._latifolia_Summer                   32.00000      a
-M._officinalis_Winter                 30.00000      a
-A._unedo_Winter                       26.83333      a
-P._lentiscus_Summer                   26.66667      a
-P._lentiscus_Winter                   22.50000      a
-A._unedo_Summer                       22.33333      a
-M._communis_Summer                    21.83333      a
-Q._coccifera_Winter                   19.50000      a
-M._officinalis_Summer                 12.83333      a
-L._stoechas_Summer                    12.50000      a
-Q._coccifera_Summer                   12.33333      a
-C._incanus_Summer                     11.16667      a
+               my_setup[my_setup$season == myseason, myalphaindex] groups
+L._stoechas                                              18.666667      a
+P._lentiscus                                             16.000000      a
+M._communis                                              15.666667      a
+Q._coccifera                                             14.333333      a
+A._unedo                                                 13.000000      a
+P._latifolia                                              9.666667      a
+M._officinalis                                            6.666667      a
+C._incanus                                                6.000000      a
+
+attr(,"class")
+[1] "group"
+
+$`Fishers_a Shapiro Winter`
+
+	Shapiro-Wilk normality test
+
+data:  my_setup[my_setup$season == myseason, myalphaindex]
+W = 0.82273, p-value = 0.0007101
+
+
+$`Fishers_a Levene Winter`
+Levene's Test for Homogeneity of Variance (center = median)
+      Df F value Pr(>F)
+group  7  0.9219 0.5154
+      16               
+
+$`Fishers_a ANOVA Winter`
+$statistics
+   MSerror Df    Mean      CV      MSD
+  3.570106 16 3.68551 51.2676 5.341225
+
+$parameters
+   test name.t ntr StudentizedRange alpha
+  Tukey  plant   8          4.89622  0.05
+
+$means
+               Fishers_a       std r      Min      Max      Q25      Q50      Q75
+A._unedo        4.304583 3.4354606 3 1.399288 8.096426 2.408661 3.418035 5.757230
+C._incanus      3.375894 1.5356503 3 2.468140 5.148941 2.489371 2.510601 3.829771
+L._stoechas     3.300162 0.2737229 3 2.990509 3.509855 3.195316 3.400123 3.454989
+M._communis     3.445992 0.5185496 3 2.916805 3.953206 3.192386 3.467966 3.710586
+M._officinalis  4.340029 1.4596390 3 3.101432 5.949254 3.535417 3.969401 4.959328
+P._latifolia    3.190342 0.6820687 3 2.461935 3.813938 2.878544 3.295154 3.554546
+P._lentiscus    3.376790 0.5616079 3 2.895031 3.993615 3.068378 3.241726 3.617670
+Q._coccifera    4.150289 3.3384509 3 1.711846 7.955193 2.247837 2.783829 5.369511
+
+$comparison
+NULL
+
+$groups
+               Fishers_a groups
+M._officinalis  4.340029      a
+A._unedo        4.304583      a
+Q._coccifera    4.150289      a
+M._communis     3.445992      a
+P._lentiscus    3.376790      a
+C._incanus      3.375894      a
+L._stoechas     3.300162      a
+P._latifolia    3.190342      a
+
+attr(,"class")
+[1] "group"
+
+$`Fishers_a Kruskal Winter`
+$statistics
+     Chisq   p.chisq
+  2.173333 0.9496269
+
+$parameters
+            test p.ajusted                                        name.t ntr alpha
+  Kruskal-Wallis       fdr my_setup[my_setup$season == myseason, ]$plant   8  0.05
+
+$means
+               my_setup.my_setup.season....myseason..myalphaindex.     rank       std r      Min
+A._unedo                                                  4.304583 13.00000 3.4354606 3 1.399288
+C._incanus                                                3.375894 10.00000 1.5356503 3 2.468140
+L._stoechas                                               3.300162 12.66667 0.2737229 3 2.990509
+M._communis                                               3.445992 13.66667 0.5185496 3 2.916805
+M._officinalis                                            4.340029 17.00000 1.4596390 3 3.101432
+P._latifolia                                              3.190342 10.66667 0.6820687 3 2.461935
+P._lentiscus                                              3.376790 12.66667 0.5616079 3 2.895031
+Q._coccifera                                              4.150289 10.33333 3.3384509 3 1.711846
+                    Max      Q25      Q50      Q75
+A._unedo       8.096426 2.408661 3.418035 5.757230
+C._incanus     5.148941 2.489371 2.510601 3.829771
+L._stoechas    3.509855 3.195316 3.400123 3.454989
+M._communis    3.953206 3.192386 3.467966 3.710586
+M._officinalis 5.949254 3.535417 3.969401 4.959328
+P._latifolia   3.813938 2.878544 3.295154 3.554546
+P._lentiscus   3.993615 3.068378 3.241726 3.617670
+Q._coccifera   7.955193 2.247837 2.783829 5.369511
+
+$comparison
+NULL
+
+$groups
+               my_setup[my_setup$season == myseason, myalphaindex] groups
+M._officinalis                                            17.00000      a
+M._communis                                               13.66667      a
+A._unedo                                                  13.00000      a
+L._stoechas                                               12.66667      a
+P._lentiscus                                              12.66667      a
+P._latifolia                                              10.66667      a
+Q._coccifera                                              10.33333      a
+C._incanus                                                10.00000      a
 
 attr(,"class")
 [1] "group"
@@ -985,156 +1036,196 @@ mean of x mean of y
 
 
 
-$`Pielous_eveness Shapiro`
+$`Richness Shapiro Summer`
 
 	Shapiro-Wilk normality test
 
-data:  my_setup[, myalphaindex]
-W = 0.84639, p-value = 1.746e-05
+data:  my_setup[my_setup$season == myseason, myalphaindex]
+W = 0.97892, p-value = 0.8751
 
 
-$`Pielous_eveness Levene`
+$`Richness Levene Summer`
 Levene's Test for Homogeneity of Variance (center = median)
       Df F value Pr(>F)
-group 15  0.3516 0.9826
-      32               
+group  7   0.395 0.8916
+      16               
 
-$`Pielous_eveness ANOVA`
+$`Richness ANOVA Summer`
 $statistics
-    MSerror Df      Mean       CV       MSD
-  0.0189227 32 0.7284069 18.88502 0.4164814
+  MSerror Df  Mean       CV      MSD
+    9.625 16 9.125 33.99911 8.770022
 
 $parameters
-   test     name.t ntr StudentizedRange alpha
-  Tukey planttreat  16         5.244024  0.05
+   test name.t ntr StudentizedRange alpha
+  Tukey  plant   8          4.89622  0.05
 
 $means
-                      Pielous_eveness        std r       Min       Max       Q25       Q50
-A._unedo_Summer             0.6347492 0.13859518 3 0.4957997 0.7729873 0.5656301 0.6354606
-A._unedo_Winter             0.7695712 0.09241467 3 0.6656602 0.8425590 0.7330773 0.8004943
-C._incanus_Summer           0.5830655 0.10749028 3 0.4734066 0.6882472 0.5304747 0.5875428
-C._incanus_Winter           0.6751298 0.21201790 3 0.4415521 0.8554220 0.5849837 0.7284152
-L._stoechas_Summer          0.8717130 0.03916900 3 0.8279886 0.9035924 0.8557733 0.8835581
-L._stoechas_Winter          0.8192674 0.10076001 3 0.7103817 0.9092139 0.7742941 0.8382065
-M._communis_Summer          0.8300603 0.08185954 3 0.7355973 0.8802141 0.8049834 0.8743694
-M._communis_Winter          0.8119223 0.08038383 3 0.7192039 0.8620275 0.7868698 0.8545356
-M._officinalis_Summer       0.6570208 0.10814798 3 0.5913712 0.7818434 0.5946096 0.5978479
-M._officinalis_Winter       0.8029428 0.05875892 3 0.7353768 0.8420870 0.7833707 0.8313645
-P._latifolia_Summer         0.2648195 0.13987857 3 0.1184855 0.3971962 0.1986311 0.2787768
-P._latifolia_Winter         0.7081491 0.31680863 3 0.3423993 0.8971875 0.6136299 0.8848606
-P._lentiscus_Summer         0.7961804 0.09519891 3 0.7040654 0.8941893 0.7471759 0.7902864
-P._lentiscus_Winter         0.8135227 0.13453679 3 0.6596973 0.9092361 0.7656660 0.8716346
-Q._coccifera_Summer         0.7897629 0.14019979 3 0.6285411 0.8830866 0.7431011 0.8576611
-Q._coccifera_Winter         0.8266330 0.10843308 3 0.7025033 0.9028962 0.7885015 0.8744996
-                            Q75
-A._unedo_Summer       0.7042239
-A._unedo_Winter       0.8215266
-C._incanus_Summer     0.6378950
-C._incanus_Winter     0.7919186
-L._stoechas_Summer    0.8935752
-L._stoechas_Winter    0.8737102
-M._communis_Summer    0.8772918
-M._communis_Winter    0.8582815
-M._officinalis_Summer 0.6898456
-M._officinalis_Winter 0.8367257
-P._latifolia_Summer   0.3379865
-P._latifolia_Winter   0.8910241
-P._lentiscus_Summer   0.8422378
-P._lentiscus_Winter   0.8904354
-Q._coccifera_Summer   0.8703739
-Q._coccifera_Winter   0.8886979
+                Richness      std r Min Max  Q25 Q50  Q75
+A._unedo       10.000000 3.605551 3   6  13  8.5  11 12.0
+C._incanus      7.333333 1.527525 3   6   9  6.5   7  8.0
+L._stoechas     7.666667 1.527525 3   6   9  7.0   8  8.5
+M._communis    10.000000 1.732051 3   8  11  9.5  11 11.0
+M._officinalis  6.666667 5.507571 3   3  13  3.5   4  8.5
+P._latifolia   12.333333 2.081666 3  10  14 11.5  13 13.5
+P._lentiscus   11.333333 4.163332 3   8  16  9.0  10 13.0
+Q._coccifera    7.666667 2.081666 3   6  10  6.5   7  8.5
 
 $comparison
 NULL
 
 $groups
-                      Pielous_eveness groups
-L._stoechas_Summer          0.8717130      a
-M._communis_Summer          0.8300603      a
-Q._coccifera_Winter         0.8266330      a
-L._stoechas_Winter          0.8192674      a
-P._lentiscus_Winter         0.8135227      a
-M._communis_Winter          0.8119223      a
-M._officinalis_Winter       0.8029428      a
-P._lentiscus_Summer         0.7961804      a
-Q._coccifera_Summer         0.7897629      a
-A._unedo_Winter             0.7695712      a
-P._latifolia_Winter         0.7081491      a
-C._incanus_Winter           0.6751298     ab
-M._officinalis_Summer       0.6570208     ab
-A._unedo_Summer             0.6347492     ab
-C._incanus_Summer           0.5830655     ab
-P._latifolia_Summer         0.2648195      b
+                Richness groups
+P._latifolia   12.333333      a
+P._lentiscus   11.333333      a
+A._unedo       10.000000      a
+M._communis    10.000000      a
+L._stoechas     7.666667      a
+Q._coccifera    7.666667      a
+C._incanus      7.333333      a
+M._officinalis  6.666667      a
 
 attr(,"class")
 [1] "group"
 
-$`Pielous_eveness Kruskal`
+$`Richness Kruskal Summer`
 $statistics
-     Chisq    p.chisq
-  22.32313 0.09960692
+     Chisq   p.chisq
+  8.601379 0.2825557
 
 $parameters
-            test p.ajusted              name.t ntr alpha
-  Kruskal-Wallis       fdr my_setup$planttreat  16  0.05
+            test p.ajusted                                        name.t ntr alpha
+  Kruskal-Wallis       fdr my_setup[my_setup$season == myseason, ]$plant   8  0.05
 
 $means
-                      my_setup...myalphaindex.      rank        std r       Min       Max
-A._unedo_Summer                      0.6347492 14.000000 0.13859518 3 0.4957997 0.7729873
-A._unedo_Winter                      0.7695712 23.666667 0.09241467 3 0.6656602 0.8425590
-C._incanus_Summer                    0.5830655  9.666667 0.10749028 3 0.4734066 0.6882472
-C._incanus_Winter                    0.6751298 19.333333 0.21201790 3 0.4415521 0.8554220
-L._stoechas_Summer                   0.8717130 38.000000 0.03916900 3 0.8279886 0.9035924
-L._stoechas_Winter                   0.8192674 31.333333 0.10076001 3 0.7103817 0.9092139
-M._communis_Summer                   0.8300603 32.666667 0.08185954 3 0.7355973 0.8802141
-M._communis_Winter                   0.8119223 28.666667 0.08038383 3 0.7192039 0.8620275
-M._officinalis_Summer                0.6570208 14.333333 0.10814798 3 0.5913712 0.7818434
-M._officinalis_Winter                0.8029428 26.333333 0.05875892 3 0.7353768 0.8420870
-P._latifolia_Summer                  0.2648195  2.333333 0.13987857 3 0.1184855 0.3971962
-P._latifolia_Winter                  0.7081491 29.666667 0.31680863 3 0.3423993 0.8971875
-P._lentiscus_Summer                  0.7961804 28.333333 0.09519891 3 0.7040654 0.8941893
-P._lentiscus_Winter                  0.8135227 32.333333 0.13453679 3 0.6596973 0.9092361
-Q._coccifera_Summer                  0.7897629 28.333333 0.14019979 3 0.6285411 0.8830866
-Q._coccifera_Winter                  0.8266330 33.000000 0.10843308 3 0.7025033 0.9028962
-                            Q25       Q50       Q75
-A._unedo_Summer       0.5656301 0.6354606 0.7042239
-A._unedo_Winter       0.7330773 0.8004943 0.8215266
-C._incanus_Summer     0.5304747 0.5875428 0.6378950
-C._incanus_Winter     0.5849837 0.7284152 0.7919186
-L._stoechas_Summer    0.8557733 0.8835581 0.8935752
-L._stoechas_Winter    0.7742941 0.8382065 0.8737102
-M._communis_Summer    0.8049834 0.8743694 0.8772918
-M._communis_Winter    0.7868698 0.8545356 0.8582815
-M._officinalis_Summer 0.5946096 0.5978479 0.6898456
-M._officinalis_Winter 0.7833707 0.8313645 0.8367257
-P._latifolia_Summer   0.1986311 0.2787768 0.3379865
-P._latifolia_Winter   0.6136299 0.8848606 0.8910241
-P._lentiscus_Summer   0.7471759 0.7902864 0.8422378
-P._lentiscus_Winter   0.7656660 0.8716346 0.8904354
-Q._coccifera_Summer   0.7431011 0.8576611 0.8703739
-Q._coccifera_Winter   0.7885015 0.8744996 0.8886979
+               my_setup.my_setup.season....myseason..myalphaindex.      rank      std r Min Max  Q25 Q50
+A._unedo                                                 10.000000 14.500000 3.605551 3   6  13  8.5  11
+C._incanus                                                7.333333  8.166667 1.527525 3   6   9  6.5   7
+L._stoechas                                               7.666667  9.000000 1.527525 3   6   9  7.0   8
+M._communis                                              10.000000 15.333333 1.732051 3   8  11  9.5  11
+M._officinalis                                            6.666667  8.000000 5.507571 3   3  13  3.5   4
+P._latifolia                                             12.333333 19.666667 2.081666 3  10  14 11.5  13
+P._lentiscus                                             11.333333 16.333333 4.163332 3   8  16  9.0  10
+Q._coccifera                                              7.666667  9.000000 2.081666 3   6  10  6.5   7
+                Q75
+A._unedo       12.0
+C._incanus      8.0
+L._stoechas     8.5
+M._communis    11.0
+M._officinalis  8.5
+P._latifolia   13.5
+P._lentiscus   13.0
+Q._coccifera    8.5
 
 $comparison
 NULL
 
 $groups
-                      my_setup[, myalphaindex] groups
-L._stoechas_Summer                   38.000000      a
-Q._coccifera_Winter                  33.000000      a
-M._communis_Summer                   32.666667      a
-P._lentiscus_Winter                  32.333333      a
-L._stoechas_Winter                   31.333333      a
-P._latifolia_Winter                  29.666667      a
-M._communis_Winter                   28.666667      a
-P._lentiscus_Summer                  28.333333      a
-Q._coccifera_Summer                  28.333333      a
-M._officinalis_Winter                26.333333      a
-A._unedo_Winter                      23.666667      a
-C._incanus_Winter                    19.333333      a
-M._officinalis_Summer                14.333333      a
-A._unedo_Summer                      14.000000      a
-C._incanus_Summer                     9.666667      a
-P._latifolia_Summer                   2.333333      a
+               my_setup[my_setup$season == myseason, myalphaindex] groups
+P._latifolia                                             19.666667      a
+P._lentiscus                                             16.333333      a
+M._communis                                              15.333333      a
+A._unedo                                                 14.500000      a
+L._stoechas                                               9.000000      a
+Q._coccifera                                              9.000000      a
+C._incanus                                                8.166667      a
+M._officinalis                                            8.000000      a
+
+attr(,"class")
+[1] "group"
+
+$`Richness Shapiro Winter`
+
+	Shapiro-Wilk normality test
+
+data:  my_setup[my_setup$season == myseason, myalphaindex]
+W = 0.92584, p-value = 0.07873
+
+
+$`Richness Levene Winter`
+Levene's Test for Homogeneity of Variance (center = median)
+      Df F value Pr(>F)
+group  7  0.4992 0.8217
+      16               
+
+$`Richness ANOVA Winter`
+$statistics
+   MSerror Df   Mean       CV      MSD
+  13.41667 16 11.875 30.84528 10.35435
+
+$parameters
+   test name.t ntr StudentizedRange alpha
+  Tukey  plant   8          4.89622  0.05
+
+$means
+               Richness      std r Min Max  Q25 Q50  Q75
+A._unedo       11.00000 6.557439 3   4  17  8.0  12 14.5
+C._incanus     14.66667 1.527525 3  13  16 14.0  15 15.5
+L._stoechas    13.33333 2.516611 3  11  16 12.0  13 14.5
+M._communis    12.33333 2.081666 3  10  14 11.5  13 13.5
+M._officinalis 12.00000 1.732051 3  10  13 11.5  13 13.0
+P._latifolia   12.66667 4.163332 3   8  16 11.0  14 15.0
+P._lentiscus   10.00000 3.464102 3   8  14  8.0   8 11.0
+Q._coccifera    9.00000 4.358899 3   4  12  7.5  11 11.5
+
+$comparison
+NULL
+
+$groups
+               Richness groups
+C._incanus     14.66667      a
+L._stoechas    13.33333      a
+P._latifolia   12.66667      a
+M._communis    12.33333      a
+M._officinalis 12.00000      a
+A._unedo       11.00000      a
+P._lentiscus   10.00000      a
+Q._coccifera    9.00000      a
+
+attr(,"class")
+[1] "group"
+
+$`Richness Kruskal Winter`
+$statistics
+     Chisq   p.chisq
+  5.871908 0.5547832
+
+$parameters
+            test p.ajusted                                        name.t ntr alpha
+  Kruskal-Wallis       fdr my_setup[my_setup$season == myseason, ]$plant   8  0.05
+
+$means
+               my_setup.my_setup.season....myseason..myalphaindex.      rank      std r Min Max  Q25 Q50
+A._unedo                                                  11.00000 12.000000 6.557439 3   4  17  8.0  12
+C._incanus                                                14.66667 18.666667 1.527525 3  13  16 14.0  15
+L._stoechas                                               13.33333 14.833333 2.516611 3  11  16 12.0  13
+M._communis                                               12.33333 12.833333 2.081666 3  10  14 11.5  13
+M._officinalis                                            12.00000 11.500000 1.732051 3  10  13 11.5  13
+P._latifolia                                              12.66667 14.666667 4.163332 3   8  16 11.0  14
+P._lentiscus                                              10.00000  8.666667 3.464102 3   8  14  8.0   8
+Q._coccifera                                               9.00000  6.833333 4.358899 3   4  12  7.5  11
+                Q75
+A._unedo       14.5
+C._incanus     15.5
+L._stoechas    14.5
+M._communis    13.5
+M._officinalis 13.0
+P._latifolia   15.0
+P._lentiscus   11.0
+Q._coccifera   11.5
+
+$comparison
+NULL
+
+$groups
+               my_setup[my_setup$season == myseason, myalphaindex] groups
+C._incanus                                               18.666667      a
+L._stoechas                                              14.833333      a
+P._latifolia                                             14.666667      a
+M._communis                                              12.833333      a
+A._unedo                                                 12.000000      a
+M._officinalis                                           11.500000      a
+P._lentiscus                                              8.666667      a
+Q._coccifera                                              6.833333      a
 
 attr(,"class")
 [1] "group"
@@ -1252,4 +1343,198 @@ mean of x mean of y
 0.7897629 1.7134853 
 
 
+
+$`Pielous_eveness Shapiro Summer`
+
+	Shapiro-Wilk normality test
+
+data:  my_setup[my_setup$season == myseason, myalphaindex]
+W = 0.89387, p-value = 0.01599
+
+
+$`Pielous_eveness Levene Summer`
+Levene's Test for Homogeneity of Variance (center = median)
+      Df F value Pr(>F)
+group  7  0.2402 0.9684
+      16               
+
+$`Pielous_eveness ANOVA Summer`
+$statistics
+     MSerror Df      Mean       CV       MSD
+  0.01237235 16 0.6784215 16.39557 0.3144318
+
+$parameters
+   test name.t ntr StudentizedRange alpha
+  Tukey  plant   8          4.89622  0.05
+
+$means
+               Pielous_eveness        std r       Min       Max       Q25       Q50       Q75
+A._unedo             0.6347492 0.13859518 3 0.4957997 0.7729873 0.5656301 0.6354606 0.7042239
+C._incanus           0.5830655 0.10749028 3 0.4734066 0.6882472 0.5304747 0.5875428 0.6378950
+L._stoechas          0.8717130 0.03916900 3 0.8279886 0.9035924 0.8557733 0.8835581 0.8935752
+M._communis          0.8300603 0.08185954 3 0.7355973 0.8802141 0.8049834 0.8743694 0.8772918
+M._officinalis       0.6570208 0.10814798 3 0.5913712 0.7818434 0.5946096 0.5978479 0.6898456
+P._latifolia         0.2648195 0.13987857 3 0.1184855 0.3971962 0.1986311 0.2787768 0.3379865
+P._lentiscus         0.7961804 0.09519891 3 0.7040654 0.8941893 0.7471759 0.7902864 0.8422378
+Q._coccifera         0.7897629 0.14019979 3 0.6285411 0.8830866 0.7431011 0.8576611 0.8703739
+
+$comparison
+NULL
+
+$groups
+               Pielous_eveness groups
+L._stoechas          0.8717130      a
+M._communis          0.8300603      a
+P._lentiscus         0.7961804      a
+Q._coccifera         0.7897629      a
+M._officinalis       0.6570208      a
+A._unedo             0.6347492      a
+C._incanus           0.5830655      a
+P._latifolia         0.2648195      b
+
+attr(,"class")
+[1] "group"
+
+$`Pielous_eveness Kruskal Summer`
+$statistics
+     Chisq    p.chisq
+  16.97333 0.01756895
+
+$parameters
+            test p.ajusted                                        name.t ntr alpha
+  Kruskal-Wallis       fdr my_setup[my_setup$season == myseason, ]$plant   8  0.05
+
+$means
+               my_setup.my_setup.season....myseason..myalphaindex.      rank        std r       Min
+A._unedo                                                 0.6347492  9.666667 0.13859518 3 0.4957997
+C._incanus                                               0.5830655  7.000000 0.10749028 3 0.4734066
+L._stoechas                                              0.8717130 21.000000 0.03916900 3 0.8279886
+M._communis                                              0.8300603 17.333333 0.08185954 3 0.7355973
+M._officinalis                                           0.6570208 10.000000 0.10814798 3 0.5913712
+P._latifolia                                             0.2648195  2.000000 0.13987857 3 0.1184855
+P._lentiscus                                             0.7961804 17.000000 0.09519891 3 0.7040654
+Q._coccifera                                             0.7897629 16.000000 0.14019979 3 0.6285411
+                     Max       Q25       Q50       Q75
+A._unedo       0.7729873 0.5656301 0.6354606 0.7042239
+C._incanus     0.6882472 0.5304747 0.5875428 0.6378950
+L._stoechas    0.9035924 0.8557733 0.8835581 0.8935752
+M._communis    0.8802141 0.8049834 0.8743694 0.8772918
+M._officinalis 0.7818434 0.5946096 0.5978479 0.6898456
+P._latifolia   0.3971962 0.1986311 0.2787768 0.3379865
+P._lentiscus   0.8941893 0.7471759 0.7902864 0.8422378
+Q._coccifera   0.8830866 0.7431011 0.8576611 0.8703739
+
+$comparison
+NULL
+
+$groups
+               my_setup[my_setup$season == myseason, myalphaindex] groups
+L._stoechas                                              21.000000      a
+M._communis                                              17.333333     ab
+P._lentiscus                                             17.000000     ab
+Q._coccifera                                             16.000000    abc
+M._officinalis                                           10.000000    bcd
+A._unedo                                                  9.666667    bcd
+C._incanus                                                7.000000     cd
+P._latifolia                                              2.000000      d
+
+attr(,"class")
+[1] "group"
+
+$`Pielous_eveness Shapiro Winter`
+
+	Shapiro-Wilk normality test
+
+data:  my_setup[my_setup$season == myseason, myalphaindex]
+W = 0.79344, p-value = 0.0002306
+
+
+$`Pielous_eveness Levene Winter`
+Levene's Test for Homogeneity of Variance (center = median)
+      Df F value Pr(>F)
+group  7  0.3973 0.8902
+      16               
+
+$`Pielous_eveness ANOVA Winter`
+$statistics
+     MSerror Df      Mean       CV       MSD
+  0.02547305 16 0.7783923 20.50416 0.4511706
+
+$parameters
+   test name.t ntr StudentizedRange alpha
+  Tukey  plant   8          4.89622  0.05
+
+$means
+               Pielous_eveness        std r       Min       Max       Q25       Q50       Q75
+A._unedo             0.7695712 0.09241467 3 0.6656602 0.8425590 0.7330773 0.8004943 0.8215266
+C._incanus           0.6751298 0.21201790 3 0.4415521 0.8554220 0.5849837 0.7284152 0.7919186
+L._stoechas          0.8192674 0.10076001 3 0.7103817 0.9092139 0.7742941 0.8382065 0.8737102
+M._communis          0.8119223 0.08038383 3 0.7192039 0.8620275 0.7868698 0.8545356 0.8582815
+M._officinalis       0.8029428 0.05875892 3 0.7353768 0.8420870 0.7833707 0.8313645 0.8367257
+P._latifolia         0.7081491 0.31680863 3 0.3423993 0.8971875 0.6136299 0.8848606 0.8910241
+P._lentiscus         0.8135227 0.13453679 3 0.6596973 0.9092361 0.7656660 0.8716346 0.8904354
+Q._coccifera         0.8266330 0.10843308 3 0.7025033 0.9028962 0.7885015 0.8744996 0.8886979
+
+$comparison
+NULL
+
+$groups
+               Pielous_eveness groups
+Q._coccifera         0.8266330      a
+L._stoechas          0.8192674      a
+P._lentiscus         0.8135227      a
+M._communis          0.8119223      a
+M._officinalis       0.8029428      a
+A._unedo             0.7695712      a
+P._latifolia         0.7081491      a
+C._incanus           0.6751298      a
+
+attr(,"class")
+[1] "group"
+
+$`Pielous_eveness Kruskal Winter`
+$statistics
+     Chisq   p.chisq
+  2.706667 0.9107483
+
+$parameters
+            test p.ajusted                                        name.t ntr alpha
+  Kruskal-Wallis       fdr my_setup[my_setup$season == myseason, ]$plant   8  0.05
+
+$means
+               my_setup.my_setup.season....myseason..myalphaindex.      rank        std r       Min
+A._unedo                                                 0.7695712  9.333333 0.09241467 3 0.6656602
+C._incanus                                               0.6751298  8.666667 0.21201790 3 0.4415521
+L._stoechas                                              0.8192674 13.666667 0.10076001 3 0.7103817
+M._communis                                              0.8119223 13.000000 0.08038383 3 0.7192039
+M._officinalis                                           0.8029428 11.000000 0.05875892 3 0.7353768
+P._latifolia                                             0.7081491 14.000000 0.31680863 3 0.3423993
+P._lentiscus                                             0.8135227 15.000000 0.13453679 3 0.6596973
+Q._coccifera                                             0.8266330 15.333333 0.10843308 3 0.7025033
+                     Max       Q25       Q50       Q75
+A._unedo       0.8425590 0.7330773 0.8004943 0.8215266
+C._incanus     0.8554220 0.5849837 0.7284152 0.7919186
+L._stoechas    0.9092139 0.7742941 0.8382065 0.8737102
+M._communis    0.8620275 0.7868698 0.8545356 0.8582815
+M._officinalis 0.8420870 0.7833707 0.8313645 0.8367257
+P._latifolia   0.8971875 0.6136299 0.8848606 0.8910241
+P._lentiscus   0.9092361 0.7656660 0.8716346 0.8904354
+Q._coccifera   0.9028962 0.7885015 0.8744996 0.8886979
+
+$comparison
+NULL
+
+$groups
+               my_setup[my_setup$season == myseason, myalphaindex] groups
+Q._coccifera                                             15.333333      a
+P._lentiscus                                             15.000000      a
+P._latifolia                                             14.000000      a
+L._stoechas                                              13.666667      a
+M._communis                                              13.000000      a
+M._officinalis                                           11.000000      a
+A._unedo                                                  9.333333      a
+C._incanus                                                8.666667      a
+
+attr(,"class")
+[1] "group"
 

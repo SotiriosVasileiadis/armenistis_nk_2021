@@ -404,22 +404,24 @@ mystatsout <- list()
 myalphaindices <- c("Shannon","Simpson","Fishers_a","Richness","Pielous_eveness")
 # loop through the various tests
 for(myalphaindex in myalphaindices){
-  # ... and run and save in the list the Shapiro test for normality of the used values
-  mystatsout[[paste(myalphaindex,"Shapiro")]] <- shapiro.test(my_setup[,myalphaindex])
-  # ... and run and save in the list the Levene test for homogenity of variances
-  mystatsout[[paste(myalphaindex,"Levene")]] <- leveneTest(as.formula(paste(myalphaindex,"~ planttreat")), data=my_setup)
-  # ... and run and save in the list the ANOVA
-  model <- aov(as.formula(paste(myalphaindex,"~ planttreat")), data = my_setup)
-  mystatsout[[paste(myalphaindex,"ANOVA")]] <- HSD.test(model,"planttreat", group=TRUE,console=TRUE, main=paste(myalphaindex,"\ planttreat"))
-  # ... and run and save in the list the Kruskal (non-parametric ANOVA equivalent)
-  mystatsout[[paste(myalphaindex,"Kruskal")]] <- kruskal(my_setup[,myalphaindex], my_setup$planttreat, alpha = 0.05, p.adj="fdr", group=TRUE)
   # ... and run and save in the list the t.tests comparing seasons per each plant (non-parametric ANOVA equivalent) through a loop
   for(myplant in levels(my_setup$plant)){
     mystatsout[[paste(myalphaindex,"Student's t tests")]][[paste("t.test",myplant)]] <- t.test(my_setup[,myalphaindex][my_setup$plant == myplant & my_setup$season == "Summer"],my_setup$Shannon[my_setup$plant == myplant & my_setup$season == "Winter"])
   }
-  
+  # then loop through summer and winter and test with ANOVA the plant differences
+  for(myseason in c("Summer","Winter")){
+    # ... and run and save in the list the Shapiro test for normality of the used values
+    mystatsout[[paste(myalphaindex,"Shapiro",myseason)]] <- shapiro.test(my_setup[my_setup$season == myseason,myalphaindex])
+    # ... and run and save in the list the Levene test for homogenity of variances
+    mystatsout[[paste(myalphaindex,"Levene",myseason)]] <- leveneTest(as.formula(paste(myalphaindex,"~ plant")), data=my_setup[my_setup$season == myseason,])
+    # ... and run and save in the list the ANOVA
+    model <- aov(as.formula(paste(myalphaindex,"~ plant")), data = my_setup[my_setup$season == myseason,])
+    mystatsout[[paste(myalphaindex,"ANOVA",myseason)]] <- HSD.test(model,"plant", group=TRUE,console=TRUE, main=paste(myalphaindex,"\ plant"))
+    # ... and run and save in the list the Kruskal (non-parametric ANOVA equivalent)
+    mystatsout[[paste(myalphaindex,"Kruskal",myseason)]] <- kruskal(my_setup[my_setup$season == myseason,myalphaindex], my_setup[my_setup$season == myseason,]$plant, alpha = 0.05, p.adj="fdr", group=TRUE)
+  }
 }
-# save the outputs into a list (the associated bar-plot was prepared in excel with the significance letters being added manually)
+# save the output list used for statistical significance grouping in Fig. S4 (the associated bar-plot was prepared in excel with the significance letters being added manually)
 capture.output(mystatsout, file = "output/alpha_div_stats.txt")
 
 

@@ -1,0 +1,570 @@
+$`T.Fungi Student's t tests`
+$`T.Fungi Student's t tests`$`t.test for Aromatic comparing the Summer with the Winter group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Aromatic == aromaticchar & my_setup$Season == "Summer", testvar]
+t = 5.044, df = 8, p-value = 0.0009967
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  9708644 26062467
+sample estimates:
+mean of x 
+ 17885556 
+
+
+$`T.Fungi Student's t tests`$`t.test for No_aromatic comparing the Summer with the Winter group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Aromatic == aromaticchar & my_setup$Season == "Summer", testvar]
+t = 3.8335, df = 14, p-value = 0.001826
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  6655481 23561852
+sample estimates:
+mean of x 
+ 15108667 
+
+
+$`T.Fungi Student's t tests`$`t.test for Summer comparing the Aromatic with the non-aromatic group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Season == myseason & my_setup$Aromatic == "Aromatic", testvar]
+t = 5.044, df = 8, p-value = 0.0009967
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  9708644 26062467
+sample estimates:
+mean of x 
+ 17885556 
+
+
+$`T.Fungi Student's t tests`$`t.test for Winter comparing the Aromatic with the non-aromatic group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Season == myseason & my_setup$Aromatic == "Aromatic", testvar]
+t = 5.5078, df = 8, p-value = 0.0005685
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 2354346 5745654
+sample estimates:
+mean of x 
+  4050000 
+
+
+$`T.Fungi Student's t tests`$`t.test for Higher_canopy comparing the Summer with the Winter group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Type_plant == typeplant & my_setup$Season == "Summer", testvar]
+t = 5.7873, df = 14, p-value = 4.706e-05
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  9405765 20482235
+sample estimates:
+mean of x 
+ 14944000 
+
+
+$`T.Fungi Student's t tests`$`t.test for Lower_canopy comparing the Summer with the Winter group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Type_plant == typeplant & my_setup$Season == "Summer", testvar]
+t = 2.9372, df = 8, p-value = 0.01879
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  3902446 32417554
+sample estimates:
+mean of x 
+ 18160000 
+
+
+$`T.Fungi Student's t tests`$`t.test for Summer comparing the High with the low canopy group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Season == myseason & my_setup$Type_plant == "Higher_canopy", testvar]
+t = 5.7873, df = 14, p-value = 4.706e-05
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  9405765 20482235
+sample estimates:
+mean of x 
+ 14944000 
+
+
+$`T.Fungi Student's t tests`$`t.test for Winter comparing the High with the low canopy group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Season == myseason & my_setup$Type_plant == "Higher_canopy", testvar]
+t = 5.9265, df = 14, p-value = 3.694e-05
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 1496396 3193737
+sample estimates:
+mean of x 
+  2345067 
+
+
+
+$`T.Bacteria Student's t tests`
+$`T.Bacteria Student's t tests`$`t.test for Aromatic comparing the Summer with the Winter group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Aromatic == aromaticchar & my_setup$Season == "Summer", testvar]
+t = 3.8309, df = 8, p-value = 0.005011
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  73467493 295665840
+sample estimates:
+mean of x 
+184566667 
+
+
+$`T.Bacteria Student's t tests`$`t.test for No_aromatic comparing the Summer with the Winter group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Aromatic == aromaticchar & my_setup$Season == "Summer", testvar]
+t = 4.6142, df = 14, p-value = 0.0004014
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  71446557 195553443
+sample estimates:
+mean of x 
+133500000 
+
+
+$`T.Bacteria Student's t tests`$`t.test for Summer comparing the Aromatic with the non-aromatic group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Season == myseason & my_setup$Aromatic == "Aromatic", testvar]
+t = 3.8309, df = 8, p-value = 0.005011
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  73467493 295665840
+sample estimates:
+mean of x 
+184566667 
+
+
+$`T.Bacteria Student's t tests`$`t.test for Winter comparing the Aromatic with the non-aromatic group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Season == myseason & my_setup$Aromatic == "Aromatic", testvar]
+t = 6.4502, df = 8, p-value = 0.0001983
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 196101963 414342481
+sample estimates:
+mean of x 
+305222222 
+
+
+$`T.Bacteria Student's t tests`$`t.test for Higher_canopy comparing the Summer with the Winter group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Type_plant == typeplant & my_setup$Season == "Summer", testvar]
+t = 4.7377, df = 14, p-value = 0.0003177
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  70064931 185975069
+sample estimates:
+mean of x 
+128020000 
+
+
+$`T.Bacteria Student's t tests`$`t.test for Lower_canopy comparing the Summer with the Winter group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Type_plant == typeplant & my_setup$Season == "Summer", testvar]
+t = 3.8742, df = 8, p-value = 0.004713
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  78406654 308993346
+sample estimates:
+mean of x 
+193700000 
+
+
+$`T.Bacteria Student's t tests`$`t.test for Summer comparing the High with the low canopy group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Season == myseason & my_setup$Type_plant == "Higher_canopy", testvar]
+t = 4.7377, df = 14, p-value = 0.0003177
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  70064931 185975069
+sample estimates:
+mean of x 
+128020000 
+
+
+$`T.Bacteria Student's t tests`$`t.test for Winter comparing the High with the low canopy group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Season == myseason & my_setup$Type_plant == "Higher_canopy", testvar]
+t = 3.4458, df = 14, p-value = 0.003937
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  79139160 340060840
+sample estimates:
+mean of x 
+209600000 
+
+
+
+$`Crenarchaea Student's t tests`
+$`Crenarchaea Student's t tests`$`t.test for Aromatic comparing the Summer with the Winter group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Aromatic == aromaticchar & my_setup$Season == "Summer", testvar]
+t = 2.5209, df = 8, p-value = 0.03576
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  3528.986 79251.014
+sample estimates:
+mean of x 
+    41390 
+
+
+$`Crenarchaea Student's t tests`$`t.test for No_aromatic comparing the Summer with the Winter group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Aromatic == aromaticchar & my_setup$Season == "Summer", testvar]
+t = 5.641, df = 14, p-value = 6.087e-05
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  5168.216 11509.117
+sample estimates:
+mean of x 
+ 8338.667 
+
+
+$`Crenarchaea Student's t tests`$`t.test for Summer comparing the Aromatic with the non-aromatic group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Season == myseason & my_setup$Aromatic == "Aromatic", testvar]
+t = 2.5209, df = 8, p-value = 0.03576
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  3528.986 79251.014
+sample estimates:
+mean of x 
+    41390 
+
+
+$`Crenarchaea Student's t tests`$`t.test for Winter comparing the Aromatic with the non-aromatic group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Season == myseason & my_setup$Aromatic == "Aromatic", testvar]
+t = 5.3511, df = 8, p-value = 0.0006849
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 2022.763 5086.349
+sample estimates:
+mean of x 
+ 3554.556 
+
+
+$`Crenarchaea Student's t tests`$`t.test for Higher_canopy comparing the Summer with the Winter group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Type_plant == typeplant & my_setup$Season == "Summer", testvar]
+t = 4.7911, df = 14, p-value = 0.0002874
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  5092.898 13348.435
+sample estimates:
+mean of x 
+ 9220.667 
+
+
+$`Crenarchaea Student's t tests`$`t.test for Lower_canopy comparing the Summer with the Winter group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Type_plant == typeplant & my_setup$Season == "Summer", testvar]
+t = 2.3992, df = 8, p-value = 0.04323
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  1550.848 78289.152
+sample estimates:
+mean of x 
+    39920 
+
+
+$`Crenarchaea Student's t tests`$`t.test for Summer comparing the High with the low canopy group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Season == myseason & my_setup$Type_plant == "Higher_canopy", testvar]
+t = 4.7911, df = 14, p-value = 0.0002874
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  5092.898 13348.435
+sample estimates:
+mean of x 
+ 9220.667 
+
+
+$`Crenarchaea Student's t tests`$`t.test for Winter comparing the High with the low canopy group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Season == myseason & my_setup$Type_plant == "Higher_canopy", testvar]
+t = 6.0216, df = 14, p-value = 3.136e-05
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 1575.801 3319.399
+sample estimates:
+mean of x 
+   2447.6 
+
+
+
+$`Cladosporium Student's t tests`
+$`Cladosporium Student's t tests`$`t.test for Aromatic comparing the Summer with the Winter group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Aromatic == aromaticchar & my_setup$Season == "Summer", testvar]
+t = 2.1471, df = 8, p-value = 0.06406
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  -6130.359 171798.692
+sample estimates:
+mean of x 
+ 82834.17 
+
+
+$`Cladosporium Student's t tests`$`t.test for No_aromatic comparing the Summer with the Winter group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Aromatic == aromaticchar & my_setup$Season == "Summer", testvar]
+t = 3.6326, df = 14, p-value = 0.002717
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  51539.74 200140.26
+sample estimates:
+mean of x 
+   125840 
+
+
+$`Cladosporium Student's t tests`$`t.test for Summer comparing the Aromatic with the non-aromatic group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Season == myseason & my_setup$Aromatic == "Aromatic", testvar]
+t = 2.1471, df = 8, p-value = 0.06406
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  -6130.359 171798.692
+sample estimates:
+mean of x 
+ 82834.17 
+
+
+$`Cladosporium Student's t tests`$`t.test for Winter comparing the Aromatic with the non-aromatic group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Season == myseason & my_setup$Aromatic == "Aromatic", testvar]
+t = 2.6936, df = 8, p-value = 0.02734
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  1690.374 21805.181
+sample estimates:
+mean of x 
+ 11747.78 
+
+
+$`Cladosporium Student's t tests`$`t.test for Higher_canopy comparing the Summer with the Winter group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Type_plant == typeplant & my_setup$Season == "Summer", testvar]
+t = 7.5759, df = 14, p-value = 2.566e-06
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  68052.46 121800.88
+sample estimates:
+mean of x 
+ 94926.67 
+
+
+$`Cladosporium Student's t tests`$`t.test for Lower_canopy comparing the Summer with the Winter group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Type_plant == typeplant & my_setup$Season == "Summer", testvar]
+t = 1.991, df = 8, p-value = 0.08164
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ -21256.03 289968.81
+sample estimates:
+mean of x 
+ 134356.4 
+
+
+$`Cladosporium Student's t tests`$`t.test for Summer comparing the High with the low canopy group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Season == myseason & my_setup$Type_plant == "Higher_canopy", testvar]
+t = 7.5759, df = 14, p-value = 2.566e-06
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  68052.46 121800.88
+sample estimates:
+mean of x 
+ 94926.67 
+
+
+$`Cladosporium Student's t tests`$`t.test for Winter comparing the High with the low canopy group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Season == myseason & my_setup$Type_plant == "Higher_canopy", testvar]
+t = 4.7161, df = 14, p-value = 0.000331
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 13100.51 34955.49
+sample estimates:
+mean of x 
+    24028 
+
+
+
+$`Alternaria Student's t tests`
+$`Alternaria Student's t tests`$`t.test for Aromatic comparing the Summer with the Winter group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Aromatic == aromaticchar & my_setup$Season == "Summer", testvar]
+t = 3.4472, df = 8, p-value = 0.008731
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  5399.09 27218.69
+sample estimates:
+mean of x 
+ 16308.89 
+
+
+$`Alternaria Student's t tests`$`t.test for No_aromatic comparing the Summer with the Winter group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Aromatic == aromaticchar & my_setup$Season == "Summer", testvar]
+t = 3.751, df = 14, p-value = 0.002149
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  9437.198 34640.135
+sample estimates:
+mean of x 
+ 22038.67 
+
+
+$`Alternaria Student's t tests`$`t.test for Summer comparing the Aromatic with the non-aromatic group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Season == myseason & my_setup$Aromatic == "Aromatic", testvar]
+t = 3.4472, df = 8, p-value = 0.008731
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  5399.09 27218.69
+sample estimates:
+mean of x 
+ 16308.89 
+
+
+$`Alternaria Student's t tests`$`t.test for Winter comparing the Aromatic with the non-aromatic group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Season == myseason & my_setup$Aromatic == "Aromatic", testvar]
+t = 2.2243, df = 8, p-value = 0.0568
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  -260.40 14431.51
+sample estimates:
+mean of x 
+ 7085.556 
+
+
+$`Alternaria Student's t tests`$`t.test for Higher_canopy comparing the Summer with the Winter group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Type_plant == typeplant & my_setup$Season == "Summer", testvar]
+t = 4.517, df = 14, p-value = 0.0004833
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  9972.619 28006.048
+sample estimates:
+mean of x 
+ 18989.33 
+
+
+$`Alternaria Student's t tests`$`t.test for Lower_canopy comparing the Summer with the Winter group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Type_plant == typeplant & my_setup$Season == "Summer", testvar]
+t = 2.4929, df = 8, p-value = 0.03736
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  1603.411 41178.811
+sample estimates:
+mean of x 
+ 21391.11 
+
+
+$`Alternaria Student's t tests`$`t.test for Summer comparing the High with the low canopy group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Season == myseason & my_setup$Type_plant == "Higher_canopy", testvar]
+t = 4.517, df = 14, p-value = 0.0004833
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+  9972.619 28006.048
+sample estimates:
+mean of x 
+ 18989.33 
+
+
+$`Alternaria Student's t tests`$`t.test for Winter comparing the High with the low canopy group`
+
+	One Sample t-test
+
+data:  my_setup[my_setup$Season == myseason & my_setup$Type_plant == "Higher_canopy", testvar]
+t = 2.0387, df = 14, p-value = 0.06083
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ -218.3074 8610.8407
+sample estimates:
+mean of x 
+ 4196.267 
+
+
+
