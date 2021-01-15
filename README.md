@@ -7,10 +7,10 @@ This repository contains all the necessary code and instructions for reproducing
 For running the necessary commands the users need to open a terminal, git-clone or download the repository, and enter the base folder. E.g:
 
 ```
-$ git clone https://github.com/SotiriosVasileiadis/armenistis.git
-$ cd armenistis
+$ git clone https://github.com/SotiriosVasileiadis/armenistis_nk_2021.git
+$ cd armenistis_νκ_2021
 ```
-The user, with the "armenistis" folder as working directory, and assumming that the necessary software (described in the next section) is installed, can then run all commands interactively as described here.
+The user, with the "armenistis_nk_2021" folder as working directory, and assumming that the necessary software (described in the next section) is installed, can then run all commands interactively as described here.
 
 The users also need to find the associated databases as described in the manuscript and need to install all R packages found in the **library()** load commands in the provided R scripts at the statistical analysis part.
 
