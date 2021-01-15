@@ -8,7 +8,7 @@ For running the necessary commands the users need to open a terminal, git-clone 
 
 ```
 $ git clone https://github.com/SotiriosVasileiadis/armenistis_nk_2021.git
-$ cd armenistis_νκ_2021
+$ cd armenistis_nk_2021
 ```
 The user, with the "armenistis_nk_2021" folder as working directory, and assumming that the necessary software (described in the next section) is installed, can then run all commands interactively as described here.
 
