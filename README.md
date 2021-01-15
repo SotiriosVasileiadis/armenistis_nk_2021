@@ -83,11 +83,11 @@ You can test the "DemuxOwnBCsys_absPATH.sh" for necessary arguments with "sh Dem
 Run the demultiplexing process by calling the "run_demux.sh" bash script which is created by the run_demux_pre.sh script after replacing the absolute path value with the current directory path. 
 ```
 $ perl -pe "s|absolutepath|\\Q${PWD}|g" run_demux_pre.sh | perl -pe "s/\\\//g" > run_demux.sh
+$ sh run_demux.sh
+
 ```
 Attention!!! the generated last two files (last index read pairs) will remain gnu-zipped. This is a minor pipeline glitch and you need to unzip them manually or add some associated commands.
 ```
-$ sh run_demux.sh
-
 $ cd ../../
 ```
 Then delmultiplex the sequences for the fungal dataset.
